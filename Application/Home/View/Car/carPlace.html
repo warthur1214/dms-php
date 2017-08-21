@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <link rel="stylesheet" href="/Public/css/style/style.css">
+    <link rel="stylesheet" href="/Public/css/public/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="/Public/css/public/ionicons.min.css">
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    <style type="text/css">
+    #container {
+        height: 100%
+    }
+    </style>
+</head>
+
+<body>
+    <script id="carInfo" type="text/html">
+        <div class="car-info-window">
+            <div class="badge bg-blue">{{carno}}</div>
+            <ul class="list-unstyled">
+                <li>车辆品牌：{{car_brand}}&nbsp;&nbsp;&nbsp;&nbsp;驾驶人：{{driver_name}}</li>
+                <li>设备号：{{device_id}}</li>
+                <li>联系方式：{{driver_phone}}</li>
+                <li>定位时间：{{gpsTime}}</li>
+                <li>定位地址：{{addr}}</li>
+                <li>车辆速度：{{speed}} km\h</li>
+                <li>车辆方向：{{pos}}</li>
+            </ul>
+        </div>
+    </script>
+    <!-- 车辆状态框 -->
+    <div id="carStatusBox" class="car-status-box hide">
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title">车辆状态</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body" style="display: block;">
+                <ul class="nav nav-stacked">
+                    <li><a id="all" href="#"> 全部 <span class="pull-right badge bg-blue"></span></a></li>
+                    <li><a id="stop" href="#"> 静止 <span class="pull-right badge bg-red"></span></a></li>
+                    <li><a id="on" href="#"> 行驶 <span class="pull-right badge bg-green"></span></a></li>
+                    <li><a id="off" href="#"> 离线 <span class="pull-right badge bg-default"></span></a></li>
+                </ul>
+            </div>
+            <!-- /.box-body -->
+        </div>
+    </div>
+    <!-- 车辆列表框 -->
+    <div id="carListBox" class="car-list-box hide">
+        <div class="box box-warning">
+            <div id="collapseBox" data-expand="true" class="collapse-box bg-orange">
+                <i title="收起车辆列表" data-collapse="收起车辆列表" data-expand="展开车辆列表" class="fa fa-angle-double-right"></i>
+            </div>
+            <div class="box-header with-border">
+                <h3 class="box-title">车辆列表</h3>
+            </div>
+            <div class="box-body">
+                <form class="clearfix">
+                    <input type="text" class="form-control pull-left" placeholder="输入车牌号或设备号" id="car_no">
+                    <button type="button" class="btn btn-sm btn-default" id="selectCar"><i class="fa fa-search"></i> </button>
+                </form>
+                <ul id="carListResult" class="list-unstyled hide">
+                </ul>
+                <ul id="carList" class="list-unstyled">
+                    <!-- <script id="carListTmp" type="text/html">  
+                        {{each data}}  
+                            <li data-no="{{# $value.car_no}}" id="{{# $value.id}}">
+                            <input type="checkbox" value="{{# $value.id}}" name="carNo"> 
+                            {{if $value.status === "stop"}}
+                            <i class="fa fa-circle-o text-red"></i>
+                            {{else if $value.status === "on"}}
+                            <i class="fa fa-circle-o text-green"></i>
+                            {{else}}
+                            <i class="fa fa-circle-o text-default"></i>
+                            {{/if}}
+                    
+                            {{$value.car_no}}
+                            </li>                       
+                        {{/each}}
+                    </script>  -->
+                </ul>
+                <!-- <script id="orggroupTmp" type="text/html">   
+                    <li id="org-{{ # organ_id }}">  
+                    {{ organ_name }}
+                    <ul id="ul-org-{{ # organ_id }}">
+                       <li id="org-{{ # organ_id }}-group-{{ #group_id }}">  
+                        {{ group_name}}
+                        <ul id="ul-org-{{ # organ_id }}-group-{{ #group_id }}">
+                            
+                        </ul>
+                        </li>   
+                    </ul>
+                    </li>  
+                </script>
+                <script id="orggroupTmp2" type="text/html">   
+                    <li id="org-{{ # organ_id }}-group-{{ #group_id }}">  
+                        {{ group_name}}
+                        <ul id="ul-org-{{ # organ_id }}-group-{{ #group_id }}">
+                            
+                        </ul>
+                    </li>   
+                </script>
+                <script id="orgTmp" type="text/html">   
+                    <li id="org-{{ # organ_id }}">  
+                    {{ organ_name }}
+                    <ul id="ul-org-{{ # organ_id }}">
+                        
+                    </ul>
+                    </li>  
+                </script> -->
+            </div>
+            <!-- /.box-body -->
+        </div>
+    </div>
+    <div id="container"></div>
+    <include file="Index:js" />
+    <script type="text/javascript" src="/Public/plugins/baidumap.js"></script>
+    <script type="text/javascript" src="/Public/js/car/GeoUtils_min.js"></script>
+    <script type="text/javascript" src="/Public/plugins/arttemplate/template.js"></script>
+    <script type="text/javascript" src="/Public/js/car/map.js"></script>
+</body>
+
+</html>

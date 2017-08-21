@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <style>
+
+        #cooperateWrap{
+            position: relative;
+        }
+        #sonWrapper{
+            position: absolute;
+            top:42px;
+            height:auto;
+            width:100%;
+            background: #fff;
+            overflow-y: auto;
+            padding:0;
+            margin:0;
+            display: none;
+            z-index: 900;
+        }
+        #sonWrapper li:hover{
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<section class="content-header">
+    <h1>
+        添加sim卡信息
+    </h1>
+</section>
+<div class="box box-cus box-cus-form">
+    <div class="alert alert-error" style="display:none;">
+        <span>信息不能为空，请输入</span>
+    </div>
+    <div class="box-body">
+        <form role="form-horizontal" id="info_form" novalidate="novalidate">
+            <table class="table table-bordered">
+                <tbody>
+                <tr>
+                    <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 添加sim信息</td>
+                </tr>
+                <tr class="form-group">
+                    <th><span class="text-red">*</span> IMSI号</th>
+                    <td>
+                        <input type="text" class="form-control" id="IMSINo" name="imsi" required placeholder="请输入IMSI号">
+                    </td>
+                    <th><span class="text-red">*</span> ICCID</th>
+                    <td>
+                        <input type="text" class="form-control" id="ICCIDNo" name="sim_iccid" required placeholder="请输入ICCID">
+                    </td>
+                    <th> MSISDN</th>
+                    <td>
+                        <input type="text" class="form-control" name="msisdn" placeholder="请输入msisdn">
+                    </td>
+                </tr>
+                <tr class="form-group">
+                    <th><span class="text-red">*</span> 总流量</th>
+                    <td>
+                        <input type="text" class="form-control" id="totalFlow" name="total_flow" required placeholder="请输入sim卡的总流量">
+                    </td>
+                    <th><span class="text-red">*</span> 套餐月份</th>
+                    <td>
+                        <input type="text" class="form-control" id="packageMonth" name="package_month" required placeholder="sim卡的可使用时长">
+                    </td>
+                    <th><span class="text-red">*</span> SIM卡归属</th>
+                    <td>
+                        <input type="hidden" name="organ_id" required>
+                        <input type="text" class="form-control" required id="organ_id">
+                    </td>
+                </tr>
+                <tr class="form-group">
+                    <th><span class="text-red">*</span>应用硬件厂家</th>
+                    <td>
+                        <select class="form-control" name="sim_vender" required>
+                            <option value="">请选择</option>
+                            <volist name="vender" id="val">
+                            <option value="<{$val['vender_id']}>"><{$val['vender_name']}></option>
+                            </volist>
+                        </select>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <div class="box-footer clearfix text-center">
+        <button type="submit" class="btn btn-info" id="submit"><i class="fa fa-save"></i> 提交</button>
+        <a href="#" onclick="JavaScript:history.back(-1);" class="btn btn-default"><i class="fa fa-arrow-left"></i> 返回</a>
+    </div>
+</div>
+<!-- /.box --> 
+<include file="Index:js" />  
+<include file="Index:validate" />
+<script src="/Public/js/public/carGroupPopup.js"></script>
+<script src="/Public/js/sim/addSim.js"></script>
+
+<script type="text/javascript"> 
+    function getModuleByVal(val)
+    {
+        $.ajax({
+            'url':'/Home/Module/getModuleById/id/'+val,
+            'dataType':'json',
+            'type':'post',
+            success:function(result)
+            {
+                var html = "<option value=''>请选择</option>";
+                if(result.length > 0)
+                {
+                    for (var i = 0; i < result.length; i++)
+                    {
+                        html += "<option value='"+result[i]['module_id']+"'>"+result[i]['module_name']+"</option>";
+                    };
+                }
+                $('#module_parent_id').html(html);
+            }
+        })
+    }
+    CarGroupPopup({
+        $textEl: $('#organ_id'),
+        $valueEl: $('[name="organ_id"]'),
+        showGroup: false,
+        url: '/Home/Public/organTree'
+        // showAll: true //是否显示“全部”勾选项
+    });
+
+</script>
+
+
+</body>
+</html>
+
+

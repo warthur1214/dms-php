@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <link rel="stylesheet" href="/Public/css/style/style.css">
+    <style type="text/css">
+    .alert_page_success {
+        color: #468847;
+        background-color: #dff0d8;
+        border-color: #d6e9c6
+    }
+    
+    .alert_page_error {
+        color: #b94a48;
+        background-color: #f2dede;
+        border-color: #eed3d7
+    }
+    .autolist-box{
+        position: absolute;
+        width: 100%;
+        max-height: 200px;
+        overflow: auto;
+        background-color: #fff;
+        z-index: 1;
+        border: 1px solid #d2d6de;
+    }
+    .autolist-box ul{
+        padding: 0;
+        margin: 0;
+    }
+    .autolist-box li{
+        list-style: none;
+        padding: 3px 10px;
+        margin: 0;
+    }
+    .autolist-box li:hover,
+    .autolist-box li.active{
+        background-color: #eaeaea;
+    } 
+    </style>
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <section class="content-header">
+        <h1>
+        修改车辆
+      </h1>
+    </section>
+    <div class="box box-cus box-cus-form">
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="alert alert-error" style="display:none;">
+                <span>信息不能为空，请输入</span>
+            </div>
+            <form id="info_form">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 车辆基本信息</td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>车辆品牌</th>
+                            <td>
+                                <input type="text" class="form-control" id="carBand" data-name="car_band" value="<{$info['car_brand']}>">
+                                <input type="hidden" name="car_band" value="<{$info['car_brand_id']}>">
+                            </td>
+                            <th><span class="text-red">*</span>车系</th>
+                            <td>
+                                <input type="text" class="form-control" id="carSerious" data-name="car_serious" value="<{$info['car_series']}>">
+                                <input type="hidden" name="car_serious">
+                            </td>
+                            <th><span class="text-red">*</span>车牌号</th>
+                            <td>
+                                <input type="text" class="form-control" name="car_no" value="<{$info['plate_no']}>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>车辆用途</th>
+                            <td>
+                                <input type="text" class="form-control" name="car_use" value="<{$info['function']}>">
+                            </td>
+                            <th>司机名称</th>
+                            <td>
+                                <select class="form-control" id="driver_id" name="driver_id">
+                                    <option value="">请选择</option>
+                                    <volist name="driver" id="val">
+                                        <option value="<{$val['driver_id']}>" <if condition="$info['driver_id'] eq $val['driver_id']">selected</if> >
+                                            <{$val['driver_name']}>
+                                        </option>
+                                    </volist>
+                                </select>
+                            </td>
+                            <th>联系电话</th>
+                            <td id="driver_phone">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>购买日期</th>
+                            <td>
+                                <input type="text" class="form-control" name="car_buy_time" value="<{$info['purchase']}>" placeholder="年-月-日格式">
+                            </td>
+                            <th>所属车组</th>
+                            <td class="select-btn-box">
+                                <select class="form-control" name="car_group" id="car_group">
+                                    <option value="">请选择</option>
+                                    <volist name="group" id="val">
+                                        <option value="<{$val['group_id']}>" <if condition="$info['group_id'] eq $val['group_id']">selected</if> >
+                                            <{$val['group_name']}>
+                                        </option>
+                                    </volist>
+                                </select>
+                                <button type="button" class="btn btn-sm btn-default" id="addGroup"><a href="/Home/CarGroup">添加</a></button>
+                            </td>
+                            <th>车辆百公里油耗</th>
+                            <td>
+                                <input type="text" class="form-control" name="car_oil" value="<{$info['100_km_oil_wear']}>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 车辆维保信息</td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>保养条件</th>
+                            <td>
+                                <select class="form-control" id="car_care" name="car_care">
+                                    <option value="">请选择</option>
+                                    <option value="0">里程</option>
+                                    <option value="1">时间</option>
+                                </select>
+                            </td>
+                            <th class="car_care_val">里程</th>
+                            <td>
+                                <input type="text" class="form-control" style="width:80%;float:left;" id="car_care_val" name="car_care_val" value="<{$info['upkeep_interval']}>">
+                                <span style="float:right;margin-left:-28px;">公里</span>
+                            </td>
+                            <th>4S店电话</th>
+                            <td>
+                                <input type="text" class="form-control" name="fours_number" value="<{$info['4s_shop_phone']}>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>车辆状态</th>
+                            <td>
+                                <select class="form-control" id="car_status" name="car_status">
+                                    <option value="">请选择</option>
+                                    <option value="0">正常</option>
+                                    <option value="1">维修</option>
+                                    <option value="2">保养</option>
+                                </select>
+                            </td>
+                            <th>下次保养日期</th>
+                            <td>
+                                <input type="text" class="form-control" id="next_care_time" name="next_care_time" value="<{$info['next_upkeep_time']}>" placeholder="年-月-日格式">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 行驶证信息</td>
+                        </tr>
+                        <tr>
+                            <th>行驶证注册日期</th>
+                            <td id="drive_card_time">
+                            </td>
+                            <th>发动机号</th>
+                            <td>
+                                <input type="text" class="form-control" name="e_code" value="<{$info['engine_no']}>">
+                            </td>
+                            <th>车架号</th>
+                            <td>
+                                <input type="text" class="form-control" name="v_code" value="<{$info['vin']}>">
+                                <input type="hidden" class="form-control" name="device_id" value="<{$info['device_id']}>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 设备信息</td>
+                        </tr>
+                        <tr>
+                            <th>设备编号</th>
+                            <td>
+                                <{$info['device_no']}>
+                            </td>
+                            <th>设备版本</th>
+                            <td>
+                                <{$info['device_series']}>
+                            </td>
+                            <th>设备类型</th>
+                            <td>
+                                <{$info['device_type']}>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>激活时间</th>
+                            <td>
+                                <{$info['activated_time']}>
+                            </td>
+                            <th>IMSI码</th>
+                            <td>
+                                <{$info['imsi']}>
+                            </td>
+                            <th>套餐年限</th>
+                            <td>
+                                <{$info['plan_term']/12}>年</td>
+                        </tr>
+                        <tr>
+                            <th>总流量</th>
+                            <td>
+                                <{$info['total_flow']}>MB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer clearfix text-center">
+            <button type="button" class="btn btn-info" id="submit"><i class="fa fa-save"></i> 提交</button>
+            <a href="javascript:window.history.go(-1);" class="btn btn-default"><i class="fa fa-arrow-left"></i> 返回</a>
+        </div>
+    </div>
+    <include file="Index:js" />
+    <script src="/Public/plugins/jQuery/jquery.validate.min.js"></script>
+    <script src="/Public/plugins/jQuery/additional-methods.min.js"></script>
+    <script src="/Public/js/car/editCar.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $.ajax({
+            url: '/Home/Car/getCarGroup',
+            type: "post",
+            dataType: "json",
+            data: {
+                'id': "<{$info['device_id']}>"
+            },
+            success: function(result) {
+                var html = "";
+                var data = result;
+                html += "<option value=''>请选择</option>";
+                for (var i = 0; i < data.length; i++) {
+                    var select = ("<{$info['group_id']}>" == data[i]['group_id']) ? "selected" : "";
+                    html += "<option value='" + data[i]['group_id'] + "' " + select + ">" + data[i]['group_name'] + "</option>";
+                };
+                $('#car_group').html(html);
+            }
+        });
+        getDriver("<{$info['driver_id']}>");
+        //保养条件信息
+        $('#car_care').val("<{$info['upkeep_type']}>").selected;
+        care("<{$info['upkeep_type']}>");
+        //车辆状态
+        $('#car_status').val("<{$info['status']}>").selected;
+        //司机选择事件
+        $('#driver_id').change(function() {
+                getDriver($(this).val());
+            })
+            //保养条件选择事件
+        $('#car_care').change(function() {
+                care($(this).val());
+
+                $('#car_care_val').val('');
+
+
+            })
+            //保养值失去焦点事件
+        $('#car_care_val').blur(function() {
+            if ($('#car_care').val() == '1') {
+                var next = $('#next_care_time').val();
+                console.log(next);
+                var time = next ? new Date(next) : new Date();
+                var now = addDay($(this).val(), time);
+                $('#next_care_time').val(FormatDate(now));
+            }
+        })
+
+    })
+
+    function care(careVal) {
+        var val = "";
+        var unit = "";
+        if (careVal == "1") {
+            val += "时间";
+            unit += "天";
+        } else {
+            val += "里程";
+            unit += "公里";
+        }
+        $('.car_care_val').html(val);
+
+        $('#car_care_val').parents('td').find('span').html(unit);
+    }
+    //获取司机信息
+    function getDriver(driver_id) {
+        if (driver_id && driver_id != 0) {
+            $.ajax({
+                url: "/Home/Car/getDriver",
+                type: "post",
+                data: {
+                    'driver_id': driver_id
+                },
+                dataType: "json",
+                success: function(result) {
+                    $('#driver_phone').html(result.phone);
+                    $('#drive_card_time').html(result.license_start_time);
+                }
+            });
+        } else {
+            $('#driver_phone').html('');
+            $('#drive_card_time').html('');
+        }
+    }
+    //获取时间对象
+    function addDay(dayNumber, date) {
+        date = date ? date : new Date();
+        var ms = dayNumber * (1000 * 60 * 60 * 24)
+        var newDate = new Date(date.getTime() + ms);
+        return newDate;
+    }
+    //获取时间格式
+    function FormatDate(strTime) {
+        var date = new Date(strTime);
+        return date.getFullYear() + "-" + appendZero(date.getMonth() + 1) + "-" + appendZero(date.getDate());
+    }
+    //不足两位补0
+    function appendZero(obj)  
+    {  
+        if(obj<10) return "0" +""+ obj;  
+        else return obj;  
+    } 
+    </script>
+</body>
+
+</html>

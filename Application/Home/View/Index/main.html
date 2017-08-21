@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+</head>
+
+<body class="hold-transition sidebar-mini padding0">
+    <div class="wrapper">
+        <section class="content-header hide">
+            <h1>
+        欢迎<strong><{$display_name}></strong>，现在是<{$date}>！
+      </h1>
+        </section>
+        <section class="content">
+            <div class="row">
+                <!--车辆数据-->
+                <div class="col-md-6">
+                    <!--box begin-->
+                    <div class="box box-info">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">
+                              <span class="text-bold">平台中相应的车辆方面数据</span> 
+                            </h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <ul id="listIndexCarinfo" class="list-index-carinfo list-unstyled clearfix height300"> 
+                                <li>
+                                <a href="/Home/Car/carList">
+                                    <div class="small-box bg-aqua">
+                                        <div class="inner">
+                                            <h3>
+                                            <{$info['carNo']}> 辆
+                                            </h3>
+                                            <p>平台总车辆数</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li> 
+                                <li>
+                                <a href="/Home/TravelCount/travelCount">
+                                    <div class="small-box bg-maroon">
+                                        <div class="inner">
+                                            <h3>
+                                            <{$info['travelNum']}>W km
+                                            </h3>
+                                            <p>平台车辆总里程</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li> 
+                                <li>
+                                <a href="/Home/CostCount/costCount">
+                                    <div class="small-box bg-teal">
+                                        <div class="inner">
+                                            <h3>
+                                            <{$info['cost']}> 
+                                            </h3>
+                                            <p>平台车辆总费用</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li> 
+                                <li class="widthP25">
+                                <a href="/Home/Car/carPlace?status=on">
+                                    <div class="small-box bg-orange">
+                                        <div class="inner">
+                                            <h3>
+                                            <{$info['on']}> 辆
+                                            </h3>
+                                            <p>行驶车辆</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li>
+                                <li class="widthP25">
+                                <a href="/Home/Car/carPlace?status=stop">
+                                    <div class="small-box bg-fuchsia">
+                                        <div class="inner">
+                                            <h3>
+                                            <{$info['stop']}> 辆 
+                                            </h3>
+                                            <p>静止车辆</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li>
+                                <li class="widthP25">
+                                <a href="/Home/Car/carPlace?status=off">
+                                    <div class="small-box bg-purple">
+                                        <div class="inner">
+                                            <h3>
+                                            <{$info['off']}> 辆 
+                                            </h3>
+                                            <p>离线车辆</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li>
+                                <li class="widthP25">
+                                <a href="/Home/Car/carList?active_status=2">
+                                    <div class="small-box bg-purple">
+                                        <div class="inner">
+                                            <h3>
+                                            <{$info['wrong']}> 辆 
+                                            </h3>
+                                            <p>问题车辆</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--box end-->
+                </div>
+                <!--车辆数据 end-->
+                <!--驾驶评分-->
+                <div class="col-md-6">
+                    <!--box begin-->
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">
+                              <span class="text-bold">驾驶评分</span> 
+                              <span class="badge label-index-chart">当前月</span> 
+                            </h3>
+                            <div class="box-tools pull-right">
+                                <a href="/Home/ScoreCount/scoreCount" class="label label-primary">详情</a>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div id="pingfen" class="height300"></div>
+                        </div>
+                    </div>
+                    <!--box end-->
+                </div>
+                <!--驾驶评分 end-->
+            </div>
+            <!--车辆费用-->
+            <div class="box box-success">
+                <div class="box-header with-border">
+                    <h3 class="box-title">
+                      <span class="text-bold">车辆费用（Km）</span> 
+                      <span class="badge label-index-chart">本年</span> 
+                    </h3>
+                    <div class="box-tools pull-right">
+                        <a href="/Home/CostCount/costCount" class="label label-success">详情</a>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div id="feiyong" class="height300"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="feiyongdetail" class="height300"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--车辆费用 end-->
+            <!--行驶数据-->
+            <div class="box box-warning">
+                <div class="box-header with-border">
+                    <h3 class="box-title">
+                      <span class="text-bold">行驶数据（Km）</span> 
+                      <span class="badge label-index-chart">本月</span> 
+                    </h3>
+                    <div class="box-tools pull-right">
+                        <a href="/Home/TravelCount/travelCount" class="label label-warning">详情</a>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="shuju" class="height300"></div>
+                        </div>
+                        <!-- <div class="col-md-5">
+                            <div id="shujudetail" class="height300"></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!--行驶数据 end-->
+        </section>
+    </div>
+    <!-- ./wrapper -->
+    <include file="Index:js" />
+    <script src="/Public/js/public/echarts-all-3.js"></script>
+    <script type="text/javascript" src="/Public/js/index/indexBarChart.js"></script>
+    <script type="text/javascript" src="/Public/js/index/indexPieChart.js"></script>
+    <script type="text/javascript" src="/Public/js/index/indexLineChart.js"></script>
+    <script type="text/javascript" src="/Public/js/index/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+</head>
+
+<body>
+    <section class="content-header">
+        <h1>
+        行驶统计 
+      </h1>
+    </section>
+    <div class="box marginB0">
+        <input type="hidden" id="currentDate" value="<?php echo date('Y-m-d') ?>">
+        <form class="form-horizontal padding10" role="form" id="submit_form">
+            <div class="form-group">
+                <label for="car_no" class="col-sm-1 control-label">车牌号</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="car_no" name="car_no" placeholder="请输入车牌号">
+                </div>
+                <label for="device_id" class="col-sm-1 control-label">设备号</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="device_id" name="device_id" placeholder="请输入设备号">
+                </div>
+                <label for="car_group" class="col-sm-1 control-label">所属车组</label>
+                <div class="col-sm-2">
+                    <input type="hidden" name="car_group">
+                    <input type="text" class="form-control" id="car_group"> 
+                </div>
+                <div class="col-sm-3">
+                    <a id="searchBtn" href="javascript:;" class="btn btn-sm btn-info selectInfo"><i class="fa fa-search"></i> 搜索</a>
+                </div>
+                <input type="hidden" name="timeStatus" id="datestate" value="week">
+            </div>
+        </form>
+        <div class="box-body with-borderT">
+            <div id="boxTools" class="box-tools text-center">
+                <span data-role="week" class="btn btn-success">周</span>
+                <span data-role="month" class="btn">月</span>
+                <span data-role="year" class="btn">年</span>
+            </div>
+            <div id="dateCus" class="text-center daterange-box clearfix"></div>
+            <div class="total-chart-box">
+                <h4 class="box-title">各项行驶数据统计</h4>
+                <div id="totalChart" class="clearfix">
+                    <div class="item-box item-box-aqua">
+                        <span class="title-box">
+                            <span data-role="distance_travelled"></span> km
+                        </span>
+                        <p class="text-item">
+                            累计里程数
+                        </p>
+                    </div>
+                    <div class="item-box item-box-yellow">
+                        <span class="title-box">
+                            <span data-role="duration"></span>min
+                        </span>
+                        <p class="text-item">
+                            驾驶时长
+                        </p>
+                    </div>
+                    <div class="item-box item-box-blue">
+                        <span class="title-box">
+                            <span data-role="avg_speed"></span>km/h
+                        </span>
+                        <p class="text-item">
+                            平均速度
+                        </p>
+                    </div>
+                    <div class="item-box item-box-green">
+                        <span class="title-box">
+                            <span data-role="max_speed"></span>km/h
+                        </span>
+                        <p class="text-item">
+                            最大速度
+                        </p>
+                    </div>
+                    <div class="item-box item-box-navy">
+                        <span class="title-box">
+                            <span data-role="accel_count"></span>次
+                        </span>
+                        <p class="text-item">
+                            急加速
+                        </p>
+                    </div>
+                    <div class="item-box item-box-teal">
+                        <span class="title-box">
+                            <span data-role="decel_count"></span>次
+                        </span>
+                        <p class="text-item">
+                            急减速
+                        </p>
+                    </div>
+                    <div class="item-box item-box-olive">
+                        <span class="title-box">
+                            <span data-role="oil_wear"></span>L
+                        </span>
+                        <p class="text-item">
+                            累计油耗
+                        </p>
+                    </div>
+                </div>
+                <div id="container" class="echart-box"></div>
+                <h4 class="box-title">行驶数据列表</h4>
+                <div class="table-data-box">
+                    <!-- <a class="btn btn-danger btn-sm" id="btnExport"><i class="fa fa-download"></i> 导出数据</a> -->
+                    <table id="myTable" class="table table-bordered table-hover datatable-custom" style="width: 100%">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.box -->
+    <include file="Index:js" />
+    <script src="/Public/js/public/dataTableCusV2.js"></script>
+    <script src="/Public/js/public/public.js"></script>
+    <script src="/Public/js/public/dateRangeCus.js"></script>
+    <script src="/Public/js/public/echarts-all-3.js"></script>
+    <script src="/Public/js/public/carGroupPopup.js"></script>
+    <script src="/Public/js/travelCount/travelCount.js"></script>
+</body>
+
+</html>

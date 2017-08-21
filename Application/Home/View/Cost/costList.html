@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+</head>
+
+<body>
+    <section class="content-header">
+        <span class="pull-right"> 
+        <a href="/Home/Cost/addCost" class="btn btn-sm btn-info"> <i class="fa fa-plus"></i> 新增费用</a>
+      </span>
+        <h1>
+        车辆费用 
+      </h1>
+    </section>
+    <div class="box marginB0">
+        <input type="hidden" id="currentDate" value="<?php echo date('Y-m-d') ?>">
+        <form class="form-horizontal padding10" role="form" id="submit_form">
+            <div class="form-group">
+                <label for="car_no" class="col-sm-1 control-label">车牌号</label>
+                <div class="col-sm-2"> 
+                <input type="hidden" name="car_id">
+                    <input type="text" class="form-control" id="car_no" placeholder="请输入车牌号">
+                </div>
+                <label for="driver_id" class="col-sm-1 control-label">司机姓名</label>
+                <div class="col-sm-2">
+                    <input type="hidden" name="driver_id">
+                    <input type="text" class="form-control" id="driver_id" placeholder="请输入司机姓名">
+                </div>
+                <label for="sdate" class="col-sm-1 control-label">日期段</label>
+                <div class="col-sm-2">
+                    <div class='input-group date'>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                        <input type='text' class="form-control" id="sdate" name="cost_stime" />
+                    </div>
+                </div>
+                <label for="edate" class="col-sm-1 control-label">至</label>
+                <div class="col-sm-2">
+                    <div class='input-group date'>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                        <input type='text' class="form-control" id="edate" name="cost_etime" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cost_type" class="col-sm-1 control-label">费用类型</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="cost_type" name="cost_type">
+                        <option value="">全部</option>
+                        <option value="保险费用">保险费用</option>
+                        <option value="保养费用">保养费用</option>
+                        <option value="维修费用">维修费用</option>
+                        <option value="过路过桥费">过路过桥费</option>
+                        <option value="加油费">加油费</option>
+                    </select>
+                </div>
+                <div class="col-sm-9">
+                    <a id="searchBtn" href="javascript:;" class="btn btn-sm btn-info selectInfo"><i class="fa fa-search"></i> 搜索</a>
+                </div>
+            </div>
+        </form>
+        <div class="box-body with-borderT">
+            <div class="table-data-box">
+                <table id="myTable" class="table table-bordered table-hover" style=""> 
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- /.box -->
+    <include file="Index:js" />
+    <include file="Index:datatable" />
+    <include file="Index:datepicker" /> 
+    <include file="Index:validate" />
+    <script src="/Public/js/cost/costList.js"></script>
+</body>
+
+</html>

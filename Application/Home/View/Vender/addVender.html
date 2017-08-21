@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Public/plugins/datatables/dataTables.bootstrap.css">
+    <style type="text/css">
+    .alert_page_success {
+        color: #468847;
+        background-color: #dff0d8;
+        border-color: #d6e9c6
+    }
+    
+    .alert_page_error {
+        color: #b94a48;
+        background-color: #f2dede;
+        border-color: #eed3d7
+    }
+    </style>
+</head>
+
+<body>
+    <section class="content-header">
+        <h1>
+        添加硬件厂家
+      </h1>
+    </section>
+    <!-- general form elements -->
+    <div class="box box-cus box-cus-form">
+        <div class="alert alert-error" style="display:none;">
+            <span>信息不能为空，请输入</span>
+        </div>
+        <div class="box-body">
+            <form id="info_form">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="title" colspan="4"><i class="fa fa fa-info-circle"></i> 硬件厂家信息</td>
+                        </tr>
+                        <tr>
+                            <th>硬件厂家</th>
+                            <td>
+                                <input type="text" class="form-control" name="vender_name" id="vender_name" placeholder="硬件厂家">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div> 
+        <div class="box-footer clearfix text-center">
+            <button type="button" class="btn btn-info" id="submit"><i class="fa fa-save"></i>  提交</button>
+            <a href="/Home/Vender/venderList" class="btn btn-default" id="back"><i class="fa fa-arrow-left"></i>返回</a>
+        </div>
+    </div>
+    <!-- /.box -->
+    <include file="Index:js" />
+    <!-- DataTables -->
+    <script src="/Public/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/Public/plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="/Public/plugins/jQuery/jquery.validate.min.js"></script>
+    <script src="/Public/plugins/jQuery/additional-methods.min.js"></script>
+    <script src="/Public/js/vender/addVender.js"></script>
+</body>
+
+</html>

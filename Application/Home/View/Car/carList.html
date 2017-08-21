@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" /> 
+</head>
+
+<body class="page-list">
+    <section class="content-header">
+        <h1>
+        车辆列表 
+      </h1>
+    </section>
+    <div class="box marginB0 box-warning">
+        <form class="form-horizontal padding10" role="form" id="submit_form">
+            <div class="form-group">
+                <label for="car_no" class="col-sm-1 control-label">车牌号</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="car_no" name="car_no" placeholder="请输入车牌号">
+                </div>
+                <label for="car_status" class="col-sm-1 control-label">车辆状态</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="car_status" name="car_status">
+                        <option value="">全部</option>
+                        <option value="0">正常</option>
+                        <option value="1">维修</option>
+                        <option value="2">保养</option>
+                    </select>
+                </div>
+                <label for="car_group" class="col-sm-1 control-label">所属车组</label>
+                <div class="col-sm-3">
+                    <input type="hidden" name="car_group">
+                    <input type="text" class="form-control" id="car_group"> 
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="is_use" class="col-sm-1 control-label">绑定状态</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="is_use" name="is_use">
+                        <option value="-1">请选择</option>
+                        <option value="-2">未绑定</option>
+                        <option value="1">已绑定手机</option>
+                        <option value="2">已绑定车辆</option>
+                        <option value="3">已绑定车辆&手机</option>
+                    </select>
+                </div>
+                <label for="active_status" class="col-sm-1 control-label">设备状态</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="active_status" name="active_status">
+                        <option value="">全部</option>
+                        <option value="0">未激活</option>
+                        <option value="1">已激活</option>
+                        <option value="2">已损坏</option>
+                    </select>
+                </div>
+                <label for="device_id" class="col-sm-1 control-label">设备号</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="device_id" name="device_id" placeholder="请输入设备号">
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="javascript:;" class="btn btn-sm btn-info selectInfo"><i class="fa fa-search"></i> 搜索</a>
+            </div>
+        </form>
+        <div class="box-body with-borderT" style="overflow-x:scroll;">
+            <table id="list" class="table table-bordered table-hover" style="width: 100%">  
+            </table>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer clearfix page">
+        </div>
+    </div>
+    <!-- /.box -->
+    <include file="Index:js" /> 
+    <script src="/Public/js/public/dataTableCusV2.js"></script>
+    <script src="/Public/layer/layer.js"></script>
+    <script src="/Public/js/public/carGroupPopup.js"></script>
+    <script src="/Public/js/car/carList.js"></script>
+</body>
+
+</html>

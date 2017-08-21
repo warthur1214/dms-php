@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <include file="Index:meta" />
+  <include file="Index:css" />
+  <link rel="stylesheet" href="/Public/css/style/style.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="/Public/plugins/daterangepicker/daterangepicker-bs3.css">
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]--> 
+</head>
+
+<body>
+    <section class="content-header">
+        <h1>
+        历史轨迹 
+      </h1>
+    </section>
+    <div class="box">
+        <form class="form-horizontal padding10 selectForm" id="submit_form">
+            <div class="form-group">
+                <label for="car_no" class="col-sm-1 control-label">车牌号</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" placeholder="请输入车牌号" name="car_no" id="car_no">
+                </div>
+                <label for="device_no" class="col-sm-1 control-label">设备号</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" placeholder="请输入设备号" name="device_no" id="device_no">
+                </div>
+                <label for="trailtime" class="col-sm-2 control-label">行程时间段</label>
+                <div class="col-sm-3">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar-times-o"></i>
+                        </div>
+                        <input type="text" class="form-control pull-right" id="trailtime" name="trailtime" id="trailtime" placeholder="行程时间段" value="<{$date['startDate']}> - <{$date['endDate']}>">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="car_group" class="col-sm-1 control-label">所属车组</label>
+                <div class="col-sm-2">
+                    <input type="hidden" name="car_group">
+                    <input type="text" class="form-control" id="car_group">
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn  btn-sm btn-info selectInfo"><i class="fa fa-search"></i> 搜索</button>
+                </div>
+            </div>
+        </form>
+        <div class="box-header with-borderT">
+            <!-- <a href="javascript:;" id="fileOut" class="btn btn-sm btn-info marginL5"><i class="fa fa-download"></i> 导出数据</a> -->
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body table-cus-box">
+            <table id="list" class="table table-bordered"> 
+            </table>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer clearfix page">
+        </div>
+    </div>
+<include file="Index:js" />
+<script src="/Public/js/public/dataTableCusV2.js"></script>
+<script src="/Public/plugins/daterangepicker/moment.js"></script>
+<script src="/Public/plugins/daterangepicker/daterangepicker-dob.js"></script>
+<script src="/Public/js/public/carGroupPopup.js"></script>
+<script src="/Public/js/trail/trailList.js"></script>
+</body>
+
+</html>

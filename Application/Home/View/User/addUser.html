@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Public/plugins/datatables/dataTables.bootstrap.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="/Public/plugins/iCheck/all.css">
+    <style type="text/css">
+    .alert_page_success {
+        color: #468847;
+        background-color: #dff0d8;
+        border-color: #d6e9c6
+    }
+    
+    .alert_page_error {
+        color: #b94a48;
+        background-color: #f2dede;
+        border-color: #eed3d7
+    }
+    </style>
+</head>
+
+<body>
+    <section class="content-header">
+        <h1>
+        添加用户 
+      </h1>
+    </section>
+    <div class="box box-cus box-cus-form">
+        <div class="alert alert-error" style="display:none;">
+            <span>信息不能为空，请输入</span>
+        </div>
+        <div class="box-body">
+            <form role="form" id="info_form">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 用户基本信息</td>
+                        </tr>
+                        <tr>
+                            <th>用户姓名</th>
+                            <td>
+                                <input type="text" class="form-control" id="user_name" name="user_name" placeholder="用户姓名">
+                            </td>
+                            <th>性别</th>
+                            <td>
+                                <label>
+                                    <input type="radio" name="user_sex" class="flat-red" checked value="男"> 男
+                                </label>
+                                <label>
+                                    <input type="radio" name="user_sex" class="flat-red" value="女"> 女
+                                </label>
+                            </td>
+                            <th>年龄</th>
+                            <td>
+                                <input type="text" class="form-control" id="user_age" name="user_age" placeholder="年龄">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>手机号</th>
+                            <td>
+                                <input type="text" class="form-control" id="user_phone" name="user_phone" placeholder="手机号">
+                            </td>
+                            <th>证件类型</th>
+                            <td>
+                                <select class="form-control" id="card_type" name="card_type">
+                                    <option value="身份证">身份证</option>
+                                    <option value="驾驶证">驾驶证</option>
+                                    <option value="军官证">军官证</option>
+                                    <option value="学生证">学生证</option>
+                                </select>
+                            </td>
+                            <th>证件号码</th>
+                            <td>
+                                <input type="text" class="form-control" id="user_card" name="user_card" placeholder="证件号码">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>邮箱</th>
+                            <td colspan="5">
+                                    <input type="text" class="form-control" id="user_email" name="user_email" placeholder="邮箱">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 其他信息</td>
+                        </tr>
+                        <tr>
+                            <th>设备编号</th>
+                            <td>
+                                <input type="text" class="form-control" id="device_number" name="device_number" placeholder="设备编号">
+                            </td>
+                            <th>分配企业</th>
+                            <td>
+                                <select class="form-control" id="organ_id" name="organ_id">
+                                    <option value="">请选择</option>
+                                    <volist name="organ" id="val">
+                                        <option value="<{$val['organ_id']}>">
+                                            <{$val['organ_name']}>
+                                        </option>
+                                    </volist>
+                                </select>
+                            </td>
+                            <th>车牌号码</th>
+                            <td>
+                                <input type="text" class="form-control" id="car_number" name="car_number" placeholder="车牌号码">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>车型</th>
+                            <td>
+                                <input type="text" class="form-control" id="car_type" name="car_type" placeholder="车型">
+                            </td>
+                            <td colspan="4"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div class="box-footer text-center">
+            <button type="submit" class="btn btn-info" id="submit"><i class="fa fa-save"></i> 提交</button>
+            <a href="/Home/User/userList" class="btn btn-default"><i class="fa fa-arrow-left"></i> 返回</a>
+        </div>
+    </div>
+    <!-- /.box -->
+    <include file="Index:js" />
+    <!-- DataTables -->
+    <script src="/Public/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/Public/plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="/Public/plugins/jQuery/jquery.validate.min.js"></script>
+    <script src="/Public/plugins/jQuery/additional-methods.min.js"></script>
+    <!-- iCheck 1.0.1 -->
+    <script src="/Public/plugins/iCheck/icheck.min.js"></script>
+    <script src="/Public/js/user/addUser.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('input[type="radio"].flat-red').iCheck({
+            radioClass: 'iradio_flat-green'
+        });
+    })
+    </script>
+</body>
+
+</html>

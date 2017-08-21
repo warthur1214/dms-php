@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+</head>
+
+<body>
+    <section class="content-header">
+        <h1>
+        得分统计 
+      </h1>
+    </section>
+    <div class="box marginB0"> 
+        <input type="hidden" id="currentDate" value="<?php echo date('Y-m-d') ?>">
+        <form class="form-horizontal padding10" role="form" id="submit_form">
+            <div class="form-group">
+                <label for="car_no" class="col-sm-1 control-label">车牌号</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="car_no" name="car_no" placeholder="请输入车牌号">
+                </div>
+                <label for="device_id" class="col-sm-1 control-label">设备号</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="device_id" name="device_id" placeholder="请输入设备号">
+                </div> 
+                <label for="sdate" class="col-sm-1 control-label">日期段</label>
+                <div class="col-sm-2">
+                    <div class='input-group date'>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                        <input type='text' class="form-control" id="sdate" name="score_stime" /> 
+                    </div> 
+                </div>
+                <label for="edate" class="col-sm-1 control-label">至</label>
+                <div class="col-sm-2">
+                    <div class='input-group date'>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                        <input type='text' class="form-control"  id="edate" name="score_etime" /> 
+                    </div>  
+                </div>
+            </div>
+            <div class="form-group"> 
+                <label for="car_group" class="col-sm-1 control-label">所属车组</label>
+                <div class="col-sm-2">
+                    <input type="hidden" name="car_group">
+                    <input type="text" class="form-control" id="car_group"> 
+                </div>
+                <div class="col-sm-9">
+                    <a id="searchBtn" href="javascript:;" class="btn btn-sm btn-info selectInfo"><i class="fa fa-search"></i> 搜索</a>
+                </div> 
+            </div>
+        </form>
+        <div class="box-body with-borderT">
+            <div class="table-data-box">
+                <!-- <a class="btn btn-danger btn-sm" id="btnExport"><i class="fa fa-download"></i> 导出数据</a> -->
+                <table id="myTable" class="table table-bordered table-hover" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">用户账号</th>
+                            <th rowspan="2">车牌号</th>
+                            <th rowspan="2">设备号</th>
+                            <th colspan="8">评分结果</th>
+                            <th rowspan="2">开始时间</th>
+                            <th rowspan="2">结束时间</th>
+                        </tr>
+                        <tr>
+                            <th>总分</th>
+                            <th>加速</th>
+                            <th>减速</th>
+                            <th>速度</th>
+                            <th>夜间</th>
+                            <th>区域</th>
+                            <th>时长</th>
+                            <th>距离</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- /.box -->
+    <include file="Index:js" />
+    <script src="/Public/js/public/dataTableCusV2.js"></script>
+    <include file="Index:datepicker" /> 
+    <script src="/Public/js/public/public.js"></script>
+    <script src="/Public/js/public/carGroupPopup.js"></script>
+    <script src="/Public/js/scoreCount/scoreCount.js"></script>
+</body>
+
+</html>

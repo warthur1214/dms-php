@@ -1,0 +1,1416 @@
+[ 2017-06-06T21:30:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000987s ]
+
+[ 2017-06-06T21:30:33+08:00 ] 127.0.0.1 /Home/Login/loginAjax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2017-06-06T21:31:02+08:00 ] 127.0.0.1 /Public/css/public/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2017-06-06T21:31:03+08:00 ] 127.0.0.1 /Home/Login/loginAjax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2017-06-06T21:31:43+08:00 ] 127.0.0.1 /?XDEBUG_SESSION_START=16228
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000512s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2017-06-06T21:31:47+08:00 ] 127.0.0.1 /Public/css/public/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2017-06-06T21:31:48+08:00 ] 127.0.0.1 /Home/Login/loginAjax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000444s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2017-06-06T21:32:19+08:00 ] 127.0.0.1 /Home/Login/loginAjax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001146s ]
+
+[ 2017-06-06T21:33:37+08:00 ] 127.0.0.1 /?XDEBUG_SESSION_START=16228
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2017-06-06T21:33:37+08:00 ] 127.0.0.1 /Public/css/public/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001740s ]
+
+[ 2017-06-06T21:33:39+08:00 ] 127.0.0.1 /Home/Login/loginAjax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2017-06-06T21:38:27+08:00 ] 127.0.0.1 /?XDEBUG_SESSION_START=16228
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001041s ]
+
+[ 2017-06-06T21:38:30+08:00 ] 127.0.0.1 /Home/Login/loginAjax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `tp_account` [ RunTime:0.0439s ]
+SQL: SELECT `account_id`,`password` FROM `tp_account` WHERE `is_available` = 1 AND `account_name` = 'superadmin' LIMIT 1   [ RunTime:0.0422s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0417s ]
+SQL: UPDATE `tp_account` SET `last_login_time`='2017-06-06 21:38:30' WHERE `account_id` = 28 [ RunTime:0.0719s ]
+
+[ 2017-06-06T21:38:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2017-06-06T21:38:32+08:00 ] 127.0.0.1 /Home/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0454s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0323s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0316s ]
+SQL: SHOW COLUMNS FROM `tp_role_module_rel` [ RunTime:0.0316s ]
+SQL: SELECT * FROM `tp_role_module_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0353s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `parent_module_id` = 0 AND `is_visible` = 1 AND `platform_id` = 2 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0296s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '48' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0324s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '68' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0324s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '67' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0331s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '69' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0321s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '59' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0325s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '41' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0322s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '38' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0320s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '82' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0324s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '122' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2017-06-06T21:38:33+08:00 ] 127.0.0.1 /Home/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0301s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0301s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0434s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0307s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0308s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0311s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','1')  [ RunTime:0.0300s ]
+NOTIC: [8] Undefined index: carNo /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 92 行.
+NOTIC: [8] Undefined index: travelNum /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 94 行.
+NOTIC: [8] Undefined index: cost /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 95 行.
+NOTIC: [8] Undefined index: off /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 96 行.
+NOTIC: [8] Undefined index: on /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 97 行.
+NOTIC: [8] Undefined index: on /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 97 行.
+NOTIC: [8] Undefined index: stop /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 98 行.
+NOTIC: [8] Undefined index: stop /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 98 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Undefined variable: display_name /Users/warthur/Projects/www/dms/Application/Runtime/Cache/Home/4462707c48390994935bf3e366c221aa.php 第 34 行.
+NOTIC: [8] Undefined variable: date /Users/warthur/Projects/www/dms/Application/Runtime/Cache/Home/4462707c48390994935bf3e366c221aa.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001304s ]
+
+[ 2017-06-06T21:38:35+08:00 ] 127.0.0.1 /Home/Index/sonParent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001376s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0428s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0427s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0424s ]
+SQL: SHOW COLUMNS FROM `tp_account` [ RunTime:0.0420s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0506s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0421s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0397s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0422s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '0' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0423s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0415s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0398s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0413s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '88' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0420s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0420s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0417s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '87' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0417s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0395s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0422s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '86' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0429s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0443s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0417s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '72' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0414s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0415s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0415s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '1' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0434s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+
+[ 2017-06-06T21:38:36+08:00 ] 127.0.0.1 /Home/Index/score
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0416s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0404s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0424s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0407s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0429s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0419s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','1')  [ RunTime:0.0406s ]
+NOTIC: [2] ksort() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 125 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 126 行.
+NOTIC: [8] Undefined variable: info /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 137 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 137 行.
+
+[ 2017-06-06T21:38:37+08:00 ] 127.0.0.1 /Home/Index/cost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0422s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0417s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0403s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0416s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0407s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','1')  [ RunTime:0.0409s ]
+NOTIC: [2] ksort() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 160 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined variable: info /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 169 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 169 行.
+
+[ 2017-06-06T21:38:38+08:00 ] 127.0.0.1 /Home/Index/travel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0319s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0311s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0308s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0322s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0314s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0320s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0313s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','1')  [ RunTime:0.0303s ]
+NOTIC: [2] ksort() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 193 行.
+NOTIC: [8] Undefined variable: info /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 201 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 201 行.
+
+[ 2017-06-06T21:38:48+08:00 ] 127.0.0.1 /Home/Index/saveChannel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0428s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0411s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0407s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0427s ]
+SQL: SELECT `channel_id`,`parent_organ_id` FROM `tp_organ` WHERE `organ_id` = 87 LIMIT 1   [ RunTime:0.0400s ]
+
+[ 2017-06-06T21:38:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2017-06-06T21:38:49+08:00 ] 127.0.0.1 /Home/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0584s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0497s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0459s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0409s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0416s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0408s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0449s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','87')  [ RunTime:0.0422s ]
+NOTIC: [8] Undefined index: carNo /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 92 行.
+NOTIC: [8] Undefined index: travelNum /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 94 行.
+NOTIC: [8] Undefined index: cost /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 95 行.
+NOTIC: [8] Undefined index: off /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 96 行.
+NOTIC: [8] Undefined index: off /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 96 行.
+NOTIC: [8] Undefined index: on /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 97 行.
+NOTIC: [8] Undefined index: on /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 97 行.
+NOTIC: [8] Undefined index: stop /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 98 行.
+NOTIC: [8] Undefined index: stop /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 98 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined variable: display_name /Users/warthur/Projects/www/dms/Application/Runtime/Cache/Home/4462707c48390994935bf3e366c221aa.php 第 34 行.
+NOTIC: [8] Undefined variable: date /Users/warthur/Projects/www/dms/Application/Runtime/Cache/Home/4462707c48390994935bf3e366c221aa.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2017-06-06T21:38:51+08:00 ] 127.0.0.1 /Home/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000148s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0324s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0311s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0308s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0322s ]
+SQL: SHOW COLUMNS FROM `tp_role_module_rel` [ RunTime:0.0307s ]
+SQL: SELECT * FROM `tp_role_module_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0321s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `parent_module_id` = 0 AND `is_visible` = 1 AND `platform_id` = 2 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0317s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '48' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0309s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '68' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0321s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '67' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0309s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '69' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0315s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '59' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0322s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '41' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0317s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '38' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0314s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '82' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0328s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '122' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001189s ]
+
+[ 2017-06-06T21:38:53+08:00 ] 127.0.0.1 /Home/Index/sonParent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0432s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0400s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.2893s ]
+SQL: SHOW COLUMNS FROM `tp_account` [ RunTime:0.0421s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0404s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0418s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0413s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '0' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0428s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0415s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0431s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0533s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '88' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0708s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0533s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0561s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0680s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '87' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0560s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0602s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0602s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0419s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '86' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0420s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0417s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0411s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '72' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0431s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.1595s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0417s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '1' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0427s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+
+[ 2017-06-06T21:38:54+08:00 ] 127.0.0.1 /Home/Index/score
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0327s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0315s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0302s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0306s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0304s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0311s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','87')  [ RunTime:0.0302s ]
+NOTIC: [2] ksort() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 125 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 126 行.
+NOTIC: [8] Undefined variable: info /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 137 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 137 行.
+
+[ 2017-06-06T21:38:56+08:00 ] 127.0.0.1 /Home/Index/cost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0431s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.1623s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0411s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0433s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0422s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0419s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0419s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','87')  [ RunTime:0.0413s ]
+NOTIC: [2] ksort() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 160 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined variable: info /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 169 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 169 行.
+
+[ 2017-06-06T21:38:57+08:00 ] 127.0.0.1 /Home/Index/travel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0429s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0431s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0426s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0414s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','87')  [ RunTime:0.0407s ]
+NOTIC: [2] ksort() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 193 行.
+NOTIC: [8] Undefined variable: info /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 201 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 201 行.
+
+[ 2017-06-06T21:40:01+08:00 ] 127.0.0.1 /Home/Vehicle/vehicleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+NOTIC: [2] Redis::connect(): connect() failed: Operation timed out /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 25 行.
+ERR: Redis server went away
+
+[ 2017-06-06T21:40:21+08:00 ] 127.0.0.1 /Home/Vehicle/vehicleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0444s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0421s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `biz_za_9999`.`tp_user` [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `auth`.`tp_organ_type` [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0427s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `biz_za_9999`.`tp_car` [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `biz_za_9999`.`tp_device` [ RunTime:0.0422s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0418s ]
+SQL: SELECT `module_id` FROM `tp_module` WHERE `matched_key` = 'vehicleList' AND `platform_id` = 2 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `tp_role_module_rel` [ RunTime:0.0421s ]
+SQL: SELECT * FROM `tp_role_module_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0429s ]
+SQL: SELECT organ_id as vender_id,organ_name as vender_name FROM `tp_organ` WHERE `coop_type_id` LIKE '%2%' AND `is_available` = 1 AND `organ_type_id` = 4  [ RunTime:0.0400s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.504067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.504443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2017-06-06T21:40:23+08:00 ] 127.0.0.1 /Home/Vehicle/getInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0426s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `biz_za_9999`.`tp_user` [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `auth`.`tp_organ_type` [ RunTime:0.0411s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0492s ]
+SQL: SHOW COLUMNS FROM `biz_za_9999`.`tp_car` [ RunTime:0.0429s ]
+SQL: SHOW COLUMNS FROM `biz_za_9999`.`tp_device` [ RunTime:0.0439s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0409s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0411s ]
+SQL: SELECT `module_id` FROM `tp_module` WHERE `matched_key` = 'vehicleList' AND `platform_id` = 2 LIMIT 1   [ RunTime:0.0401s ]
+SQL: SHOW COLUMNS FROM `tp_role_module_rel` [ RunTime:0.0417s ]
+SQL: SELECT * FROM `tp_role_module_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0431s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0410s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0413s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','87')  [ RunTime:0.0408s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0422s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0654s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','87')  [ RunTime:0.0406s ]
+SQL: SELECT count(1) as cnt
+		 from biz_za_9999.tp_device as v
+		 left join biz.tp_device_series as model on v.device_series_id = model.device_series_id 
+		 left join biz.tp_device_type as type on model.device_type_id = type.device_type_id
+		 left join auth.tp_organ as organ on v.belonged_organ_id = organ.organ_id
+		 left join auth.tp_organ as vender on v.supplied_organ_id = vender.organ_id
+		 left join biz_za_9999.tp_sim_card as sim on v.device_id = sim.device_id 
+		 left join biz_za_9999.tp_user as user on v.device_id = user.device_id 
+		 left join biz_za_9999.tp_car as car on user.car_id = car.car_id 
+		 left join biz_za_9999.tp_car_plate_rel as cpr on car.car_id = cpr.car_id
+		 left join biz_za_9999.tp_plate as cp on cpr.plate_id = cp.plate_id
+		 where 1=1 and v.belonged_organ_id in (87) 
+		 group by v.device_id
+		 limit 1 [ RunTime:0.0415s ]
+NOTIC: [8] Undefined offset: 0 /Users/warthur/Projects/www/dms/Application/Home/Controller/VehicleController.class.php 第 207 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 197 行.
+SQL: SELECT 
+            v.device_id as id,v.device_no,vender.organ_name as device_com,type.device_type,
+            model.device_series as device_model,v.belonged_organ_id,v.status as active_status,
+            v.activated_time as active_time,v.is_binded_car as is_car,v.is_binded_user as is_use,
+            v.create_time,sim.imsi,sim.iccid as sim_iccid,sim.msisdn,sim.total_flow,
+            sim.plan_term as package_month,user.tel,user.nickname,user.create_time as user_create_time,
+            car.car_id,cp.plate_no as car_no,car.vin as v_code,car.engine_no as e_code,organ.organ_name
+		 from biz_za_9999.tp_device as v
+		 left join biz.tp_device_series as model on v.device_series_id = model.device_series_id 
+		 left join biz.tp_device_type as type on model.device_type_id = type.device_type_id
+		 left join auth.tp_organ as organ on v.belonged_organ_id = organ.organ_id
+		 left join auth.tp_organ as vender on v.supplied_organ_id = vender.organ_id
+		 left join biz_za_9999.tp_sim_card as sim on v.device_id = sim.device_id 
+		 left join biz_za_9999.tp_user as user on v.device_id = user.device_id 
+		 left join biz_za_9999.tp_car as car on user.car_id = car.car_id 
+		 left join biz_za_9999.tp_car_plate_rel as cpr on car.car_id = cpr.car_id
+		 left join biz_za_9999.tp_plate as cp on cpr.plate_id = cp.plate_id
+		 where 1=1 and v.belonged_organ_id in (87) 
+		 group by v.device_id
+		 order by v.device_id desc limit 0,20 [ RunTime:0.0433s ]
+
+[ 2017-06-06T21:40:26+08:00 ] 127.0.0.1 /Home/Public/organTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0429s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0417s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0409s ]
+SQL: SHOW COLUMNS FROM `biz_za_9999`.`tp_group` [ RunTime:0.0432s ]
+SQL: SELECT `belonged_organ_id`,`group_id`,`group_name` FROM biz_za_9999.tp_group  [ RunTime:0.0419s ]
+NOTIC: [8] Undefined variable: new_group /Users/warthur/Projects/www/dms/Application/Home/Controller/PublicController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0423s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0405s ]
+SQL: SHOW COLUMNS FROM `tp_account` [ RunTime:0.0415s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0414s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0415s ]
+SQL: select organ.organ_id,organ.organ_name from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '0' and organ.is_available = '1' and organ.organ_id = '87' and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0429s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0418s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0421s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0408s ]
+SQL: select organ.organ_id,organ.organ_name from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '87' and organ.is_available = '1' and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0420s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Controller/PublicController.class.php 第 64 行.
+
+[ 2017-06-06T21:40:36+08:00 ] 127.0.0.1 /Home/Vehicle/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0417s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `biz_za_9999`.`tp_user` [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `auth`.`tp_organ_type` [ RunTime:0.0441s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0416s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0409s ]
+SQL: SHOW COLUMNS FROM `biz_za_9999`.`tp_car` [ RunTime:0.0431s ]
+SQL: SHOW COLUMNS FROM `biz_za_9999`.`tp_device` [ RunTime:0.0413s ]
+NOTIC: [2] Redis::connect(): connect() failed: Operation timed out /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 25 行.
+ERR: Redis server went away
+
+[ 2017-06-06T21:44:01+08:00 ] 127.0.0.1 /Home/Device/deviceList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0529s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0541s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0526s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0417s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0414s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0415s ]
+SQL: SELECT `module_id` FROM `tp_module` WHERE `matched_key` = 'deviceList' AND `platform_id` = 2 LIMIT 1   [ RunTime:0.0405s ]
+SQL: SHOW COLUMNS FROM `tp_role_module_rel` [ RunTime:0.0419s ]
+SQL: SELECT * FROM `tp_role_module_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0608s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2017-06-06T21:44:02+08:00 ] 127.0.0.1 /Home/Device/deviceListAjax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0320s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0316s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0318s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0454s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0316s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0328s ]
+SQL: SELECT `module_id` FROM `tp_module` WHERE `matched_key` = 'deviceList' AND `platform_id` = 2 LIMIT 1   [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `tp_role_module_rel` [ RunTime:0.0362s ]
+SQL: SELECT * FROM `tp_role_module_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0334s ]
+SQL: SELECT `device_type_id`,device_type as device_type_name,`supplied_organ_id` FROM biz.tp_device_type  [ RunTime:0.0315s ]
+SQL: SELECT `organ_name` FROM `tp_organ` WHERE `organ_id` = 1 LIMIT 1   [ RunTime:0.0315s ]
+SQL: SELECT `organ_name` FROM `tp_organ` WHERE `organ_id` = 1 LIMIT 1   [ RunTime:0.0308s ]
+SQL: SELECT `organ_name` FROM `tp_organ` WHERE `organ_id` = 1 LIMIT 1   [ RunTime:0.0336s ]
+SQL: SELECT `organ_name` FROM `tp_organ` WHERE `organ_id` = 1 LIMIT 1   [ RunTime:0.0351s ]
+
+[ 2017-06-06T21:44:03+08:00 ] 127.0.0.1 /Home/Device/getDevice/act/model/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0434s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0415s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0405s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0429s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0431s ]
+SQL: SELECT device_series_id as device_model_id,device_series as device_model_name FROM biz.tp_device_series WHERE `device_type_id` = 2  [ RunTime:0.0413s ]
+
+[ 2017-06-06T21:44:04+08:00 ] 127.0.0.1 /Home/Device/getDevice/act/model/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0431s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0417s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0409s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0427s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0422s ]
+SQL: SELECT device_series_id as device_model_id,device_series as device_model_name FROM biz.tp_device_series WHERE `device_type_id` = 7  [ RunTime:0.0589s ]
+
+[ 2017-06-06T21:44:05+08:00 ] 127.0.0.1 /Home/Device/getDevice/act/model/id/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0328s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0303s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0304s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0302s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0314s ]
+SQL: SELECT device_series_id as device_model_id,device_series as device_model_name FROM biz.tp_device_series WHERE `device_type_id` = 8  [ RunTime:0.1063s ]
+
+[ 2017-06-06T21:44:13+08:00 ] 127.0.0.1 /Home/Device/getDevice/act/model/id/9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [2] Redis::connect(): connect() failed: Operation timed out /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 25 行.
+ERR: Redis server went away
+
+[ 2017-06-06T21:44:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-06-06T21:44:26+08:00 ] 127.0.0.1 /Home/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001645s ]
+NOTIC: [2] Redis::connect(): connect() failed: Operation timed out /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 25 行.
+ERR: Redis server went away
+
+[ 2017-06-06T21:44:35+08:00 ] 127.0.0.1 /Home/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+NOTIC: [2] Redis::connect(): connect() failed: Operation timed out /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 25 行.
+ERR: Redis server went away
+
+[ 2017-06-06T21:44:37+08:00 ] 127.0.0.1 /Home/Index/sonParent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0423s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0414s ]
+SQL: SHOW COLUMNS FROM `tp_account` [ RunTime:0.0420s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0444s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0432s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0411s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0418s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0420s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '0' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0431s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0421s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0403s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0415s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '88' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0423s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0411s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0419s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0414s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '87' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0431s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0419s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0401s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0413s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '86' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0419s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0411s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0409s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0411s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '72' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0424s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0423s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0407s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0427s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '1' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0417s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+
+[ 2017-06-06T21:44:37+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2017-06-06T21:44:38+08:00 ] 127.0.0.1 /Home/Index/menu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0324s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0308s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0308s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0318s ]
+SQL: SHOW COLUMNS FROM `tp_role_module_rel` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `tp_role_module_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0321s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `parent_module_id` = 0 AND `is_visible` = 1 AND `platform_id` = 2 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0304s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '48' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0315s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '68' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0320s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '67' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0317s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '69' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0292s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '59' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0315s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '41' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0321s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '38' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0319s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '82' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0316s ]
+SQL: SELECT `module_id`,`module_name`,`module_url` FROM `tp_module` WHERE `module_id` IN ('1','2','22','23','24','25','26','27','28','29','30','6','7','8','9','10','11','12','13','14','15','16','87','88','89','90','91','38','39','40','47','92','114','43','44','45','46','77','78','79','80','41','42','48','49','50','51','52','53','54','59','60','61','62','63','67','70','71','72','73','68','55','56','57','58','64','65','66','69','74','75','76','82','83','84','85','86','122','123','125','126','127','124','128','129','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','115','116','118','117','119','120','121') AND `parent_module_id` = '122' AND `is_visible` = 1 ORDER BY sort_no desc,module_id asc  [ RunTime:0.0321s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000403s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001152s ]
+
+[ 2017-06-06T21:44:39+08:00 ] 127.0.0.1 /Home/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0328s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0311s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0323s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0316s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0320s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0310s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','87')  [ RunTime:0.0308s ]
+NOTIC: [8] Undefined index: carNo /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 92 行.
+NOTIC: [8] Undefined index: travelNum /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 94 行.
+NOTIC: [8] Undefined index: cost /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 95 行.
+NOTIC: [8] Undefined index: off /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 96 行.
+NOTIC: [8] Undefined index: off /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 96 行.
+NOTIC: [8] Undefined index: on /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 97 行.
+NOTIC: [8] Undefined index: on /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 97 行.
+NOTIC: [8] Undefined index: stop /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 98 行.
+NOTIC: [8] Undefined index: stop /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 98 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000539s ]
+NOTIC: [8] Undefined variable: display_name /Users/warthur/Projects/www/dms/Application/Runtime/Cache/Home/4462707c48390994935bf3e366c221aa.php 第 34 行.
+NOTIC: [8] Undefined variable: date /Users/warthur/Projects/www/dms/Application/Runtime/Cache/Home/4462707c48390994935bf3e366c221aa.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2017-06-06T21:44:41+08:00 ] 127.0.0.1 /Home/Index/sonParent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0416s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0423s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0445s ]
+SQL: SHOW COLUMNS FROM `tp_account` [ RunTime:0.0416s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0459s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0425s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0410s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '0' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0424s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0426s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0419s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '88' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0421s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0415s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0410s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '87' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0412s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0421s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0403s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0412s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '86' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0414s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0420s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0814s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0414s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '72' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0418s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0418s ]
+SQL: SELECT `belonged_organ_id` FROM `tp_account` WHERE `account_id` = 28 LIMIT 1   [ RunTime:0.0415s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0416s ]
+SQL: select organ.organ_id,organ.organ_name,organ.channel_id from tp_organ as organ
+		 where 1=1 and organ.parent_organ_id = '1' and organ.is_available = '1' and organ.parent_organ_id = 0 and organ.organ_id in (0,88,87,86,72,83,82,81,80,1) order by organ.organ_id desc [ RunTime:0.0424s ]
+NOTIC: [8] Undefined variable: array /Users/warthur/Projects/www/dms/Application/Home/Common/MyController.class.php 第 104 行.
+
+[ 2017-06-06T21:44:42+08:00 ] 127.0.0.1 /Home/Index/score
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0420s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0414s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0413s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0422s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0417s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','87')  [ RunTime:0.0420s ]
+NOTIC: [2] ksort() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 125 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 126 行.
+NOTIC: [8] Undefined variable: info /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 137 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 137 行.
+
+[ 2017-06-06T21:44:43+08:00 ] 127.0.0.1 /Home/Index/cost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0431s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0425s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.1955s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0417s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0423s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0446s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','87')  [ RunTime:0.0404s ]
+NOTIC: [2] ksort() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 160 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 161 行.
+NOTIC: [8] Undefined variable: info /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 169 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 169 行.
+
+[ 2017-06-06T21:44:44+08:00 ] 127.0.0.1 /Home/Index/travel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0432s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0417s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0406s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0411s ]
+SQL: SHOW COLUMNS FROM `tp_role_organ_rel` [ RunTime:0.0424s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0416s ]
+SQL: SELECT * FROM `tp_role_organ_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0470s ]
+SQL: SELECT `organ_id`,`channel_id` FROM `tp_organ` WHERE `organ_id` IN ('88','87','86','72','83','82','81','80','1','87')  [ RunTime:0.0412s ]
+NOTIC: [2] ksort() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 192 行.
+NOTIC: [2] Invalid argument supplied for foreach() /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 193 行.
+NOTIC: [8] Undefined variable: info /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 201 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given /Users/warthur/Projects/www/dms/Application/Home/Controller/IndexController.class.php 第 201 行.
+
+[ 2017-06-06T22:00:21+08:00 ] 127.0.0.1 /Home/Device/deviceList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003029s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0416s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0411s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0408s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0417s ]
+SQL: SELECT `module_id` FROM `tp_module` WHERE `matched_key` = 'deviceList' AND `platform_id` = 2 LIMIT 1   [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `tp_role_module_rel` [ RunTime:0.0422s ]
+SQL: SELECT * FROM `tp_role_module_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001119s ]
+
+[ 2017-06-06T22:00:23+08:00 ] 127.0.0.1 /Home/Device/deviceListAjax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0317s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0318s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0333s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0298s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0306s ]
+SQL: SELECT `module_id` FROM `tp_module` WHERE `matched_key` = 'deviceList' AND `platform_id` = 2 LIMIT 1   [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `tp_role_module_rel` [ RunTime:0.0324s ]
+SQL: SELECT * FROM `tp_role_module_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0326s ]
+SQL: SELECT `device_type_id`,device_type as device_type_name,`supplied_organ_id` FROM biz.tp_device_type  [ RunTime:0.0295s ]
+SQL: SELECT `organ_name` FROM `tp_organ` WHERE `organ_id` = 1 LIMIT 1   [ RunTime:0.0318s ]
+SQL: SELECT `organ_name` FROM `tp_organ` WHERE `organ_id` = 1 LIMIT 1   [ RunTime:0.0309s ]
+SQL: SELECT `organ_name` FROM `tp_organ` WHERE `organ_id` = 1 LIMIT 1   [ RunTime:0.0298s ]
+SQL: SELECT `organ_name` FROM `tp_organ` WHERE `organ_id` = 1 LIMIT 1   [ RunTime:0.0307s ]
+
+[ 2017-06-06T22:00:24+08:00 ] 127.0.0.1 /Home/Device/getDevice/act/model/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0442s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0419s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0408s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0418s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0419s ]
+SQL: SELECT device_series_id as device_model_id,device_series as device_model_name FROM biz.tp_device_series WHERE `device_type_id` = 2  [ RunTime:0.0414s ]
+
+[ 2017-06-06T22:00:25+08:00 ] 127.0.0.1 /Home/Device/getDevice/act/model/id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0425s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0415s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0431s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0428s ]
+SQL: SELECT device_series_id as device_model_id,device_series as device_model_name FROM biz.tp_device_series WHERE `device_type_id` = 7  [ RunTime:0.0427s ]
+
+[ 2017-06-06T22:00:26+08:00 ] 127.0.0.1 /Home/Device/getDevice/act/model/id/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.1319s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0414s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0433s ]
+SQL: SELECT device_series_id as device_model_id,device_series as device_model_name FROM biz.tp_device_series WHERE `device_type_id` = 8  [ RunTime:0.0416s ]
+
+[ 2017-06-06T22:00:26+08:00 ] 127.0.0.1 /Home/Device/getDevice/act/model/id/9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0419s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0428s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0432s ]
+SQL: SELECT device_series_id as device_model_id,device_series as device_model_name FROM biz.tp_device_series WHERE `device_type_id` = 9  [ RunTime:0.0428s ]
+
+[ 2017-06-06T22:00:35+08:00 ] 127.0.0.1 /Home/Device
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0419s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0404s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0412s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0409s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0425s ]
+SQL: SELECT `module_id` FROM `tp_module` WHERE `matched_key` = 'addDevice' AND `platform_id` = 2 LIMIT 1   [ RunTime:0.0457s ]
+SQL: SHOW COLUMNS FROM `tp_role_module_rel` [ RunTime:0.0417s ]
+SQL: SELECT * FROM `tp_role_module_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0433s ]
+SQL: SELECT organ_id as vender_id,organ_name as vender_name FROM `tp_organ` WHERE `coop_type_id` LIKE '%2%' AND `is_available` = 1 AND `organ_type_id` = 4  [ RunTime:0.0396s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2017-06-06T22:00:52+08:00 ] 127.0.0.1 /Home/Device/addDeviceAjax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0421s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0413s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0414s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0416s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0415s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0418s ]
+SQL: SELECT `module_id` FROM `tp_module` WHERE `matched_key` = 'addDevice' AND `platform_id` = 2 LIMIT 1   [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `tp_role_module_rel` [ RunTime:0.0418s ]
+SQL: SELECT * FROM `tp_role_module_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0435s ]
+SQL: SELECT `device_type_id` FROM biz.tp_device_type WHERE `device_type` = 'OBD' AND `supplied_organ_id` = 89 LIMIT 1   [ RunTime:0.0393s ]
+ERR: 1062:Duplicate entry 'OBD' for key 'device_type'
+ [ SQL语句 ] : INSERT INTO biz.tp_device_type (`device_type`,`supplied_organ_id`) VALUES ('OBD','89')
+ERR: 1062:Duplicate entry 'OBD' for key 'device_type'
+ [ SQL语句 ] : INSERT INTO biz.tp_device_type (`device_type`,`supplied_organ_id`) VALUES ('OBD','89')
+
+[ 2017-06-06T22:01:09+08:00 ] 127.0.0.1 /Home/Device/addDeviceAjax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002733s ]
+SQL: SHOW COLUMNS FROM `tp_organ` [ RunTime:0.0423s ]
+SQL: SHOW COLUMNS FROM `tp_account_role_rel` [ RunTime:0.0415s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0395s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_type` [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `biz`.`tp_device_series` [ RunTime:0.0415s ]
+SQL: SELECT `role_id` FROM `tp_account_role_rel` WHERE `account_id` = 28  [ RunTime:0.0414s ]
+SQL: SHOW COLUMNS FROM `tp_module` [ RunTime:0.0417s ]
+SQL: SELECT `module_id` FROM `tp_module` WHERE `matched_key` = 'addDevice' AND `platform_id` = 2 LIMIT 1   [ RunTime:0.0417s ]
+SQL: SHOW COLUMNS FROM `tp_role_module_rel` [ RunTime:0.0425s ]
+SQL: SELECT * FROM `tp_role_module_rel` WHERE `role_id` IN ('29')  [ RunTime:0.0435s ]
+SQL: SELECT `device_type_id` FROM biz.tp_device_type WHERE `device_type` = 'OBD' AND `supplied_organ_id` = 89 LIMIT 1   [ RunTime:0.0411s ]
+ERR: 1062:Duplicate entry 'OBD' for key 'device_type'
+ [ SQL语句 ] : INSERT INTO biz.tp_device_type (`device_type`,`supplied_organ_id`) VALUES ('OBD','89')
+ERR: 1062:Duplicate entry 'OBD' for key 'device_type'
+ [ SQL语句 ] : INSERT INTO biz.tp_device_type (`device_type`,`supplied_organ_id`) VALUES ('OBD','89')
+

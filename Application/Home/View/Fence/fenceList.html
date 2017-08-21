@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Public/plugins/datatables/dataTables.bootstrap.css">
+</head>
+
+<body>
+    <section class="content-header">
+        <span class="pull-right">
+        <a href="/Home/Fence/addFence" class="btn btn-sm btn-info"> <i class="fa fa-plus"></i> 添加电子围栏</a>
+      </span>
+        <h1>
+        电子围栏 
+      </h1>
+    </section>
+    <div class="box marginB0">
+        <form class="form-horizontal padding10" role="form" id="submit_form">
+            <div class="form-group">
+                <label for="fence_name" class="col-sm-1 control-label">围栏名称</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="fence_name" name="fence_name" placeholder="围栏名称">
+                </div>
+                <label for="work_term" class="col-sm-1 control-label">报警条件</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="work_term" name="work_term">
+                        <option value="">全部</option>
+                        <option value="0">驶入</option>
+                        <option value="1">驶出</option>
+                        <option value="2">驶入驶出</option>
+                    </select>
+                </div>
+                <label for="is_use" class="col-sm-1 control-label">围栏状态</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="is_use" name="is_use">
+                        <option value="">全部</option>
+                        <option value="1">有效</option>
+                        <option value="0">无效</option>
+                    </select>
+                </div>
+                <label for="car_no" class="col-sm-1 control-label">车牌号</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="car_no" name="car_no" placeholder="车牌号">
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="javascript:;" id="searchBtn" class="btn btn-sm btn-info selectInfo"><i class="fa fa-search"></i> 搜索</a>
+            </div>
+        </form>
+        <div class="box-body">
+            <table id="myTable" class="table table-bordered table-hover">
+            </table>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <div id="myTablePopup" class="fencelist-table-box hide">
+        <div class="box-head bg-yellow"> 已添加车辆 <span id="closeFencetable" class="close-item">×</span></div>
+        <div class="box-body">
+            <table class="table table-bordered table-hover">
+            </table>
+        </div>
+    </div> 
+    <!-- /.box -->
+    <include file="Index:js" />
+    <include file="Index:datatable" />
+    <script type="text/javascript" src="/Public/js/fence/initCarTree.js"></script>
+    <script type="text/javascript" src="/Public/js/fence/initCarTable.js"></script>
+    <script type="text/javascript" src="/Public/js/fence/fenceList.js"></script>
+</body>
+
+</html>

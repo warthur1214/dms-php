@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Public/plugins/datatables/dataTables.bootstrap.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="/Public/plugins/daterangepicker/daterangepicker-bs3.css">
+    <link rel="stylesheet" href="/Public/plugins/datepicker/datepicker3.css">
+    <style type="text/css">
+    .alert_page_success {
+        color: #468847;
+        background-color: #dff0d8;
+        border-color: #d6e9c6
+    }
+    
+    .alert_page_error {
+        color: #b94a48;
+        background-color: #f2dede;
+        border-color: #eed3d7
+    }
+    #cooperateWrap{
+        position: relative;
+    }
+    #sonWrapper{
+        position: absolute;
+        top:34px;
+        height:auto;
+        width:100%;
+        background: #fff;
+        overflow-y: auto;
+        padding:0;
+        margin:0;
+        display: none;
+        z-index: 900;
+    }
+    #sonWrapper li:hover{
+
+        cursor: pointer;
+    }
+    .car-group-tree{
+        z-index:10000;
+    }
+    </style>
+</head>
+
+<body>
+    <section class="content-header">
+        <h1>
+        添加司机 
+      </h1>
+    </section>
+    <!-- general form elements -->
+    <div class="box box-cus box-cus-form"> 
+        <div class="alert alert-error" style="display:none;">
+            <span>信息不能为空，请输入</span>
+        </div>
+        <div class="box-body">
+            <form role="form" id="info_form">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 司机基本信息</td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>司机姓名</th>
+                            <td>
+                                <input type="text" class="form-control" id="driver_name" name="driver_name" placeholder="请输入司机姓名">
+                            </td>
+                            <th>司机性别</th>
+                            <td>
+                                <select class="form-control" id="driver_sex" name="driver_sex">
+                                    <option value="">请选择</option>
+                                    <option value="0">男</option>
+                                    <option value="1">女</option>
+                                </select>
+                            </td>
+                            <th><span class="text-red">*</span>司机手机号</th>
+                            <td>
+                                <input type="text" class="form-control" id="driver_phone" name="driver_phone" placeholder="请输入司机手机号">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>身份证号</th>
+                            <td>
+                                <input type="text" class="form-control" id="driver_id_card" name="driver_id_card" placeholder="请输入身份证号">
+                            </td>
+                            <th>年龄</th>
+                            <td>
+                                <input type="text" class="form-control" id="driver_age" name="driver_age" placeholder="请输入年龄">
+                            </td>
+                            <th><span class="text-red">*</span>籍贯</th>
+                            <td>
+                                <input type="text" class="form-control" id="driver_address" name="driver_address" placeholder="请输入籍贯">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>户口所在地</th>
+                            <td>
+                                <input type="text" class="form-control" id="driver_location" name="driver_location" placeholder="请输入户口所在地">
+                            </td>
+                            <th>应急联系人</th>
+                            <td>
+                                <input type="text" class="form-control" id="need_link_man" name="need_link_man" placeholder="请输入应急联系人">
+                            </td>
+                            <th>应急联系人联系方式</th>
+                            <td>
+                                <input type="text" class="form-control" id="need_link_no" name="need_link_no" placeholder="请输入应急联系人联系方式">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>入职时间</th>
+                            <td class="col-sm-2">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar-times-o work"></i>
+                                    </div>
+                                    <input type="text" class="form-control" id="work_time" name="work_time" placeholder="请输入入职时间">
+                                </div>
+                            </td>
+                            <th>当前地址</th>
+                            <td>
+                                <input type="text" class="form-control" id="now_address" name="now_address" placeholder="请输入当前地址">
+                            </td>
+                            <!-- <th><span class="text-red">*</span>所属企业</th>
+                            <td>
+                                <input type="hidden" name="organ_id">
+                                <input type="text" class="form-control" id="organ_id">
+                            </td> -->
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 驾驶证信息</td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>驾驶证号</th>
+                            <td>
+                                <input type="text" class="form-control" id="drive_card" name="drive_card" placeholder="请输入驾驶证号">
+                            </td>
+                            <th><span class="text-red">*</span>驾龄</th>
+                            <td>
+                                <input type="text" class="form-control" id="drive_year" name="drive_year" placeholder="请输入驾龄">
+                            </td>
+                            <th><span class="text-red">*</span>驾驶证有效期</th>
+                            <td class="col-sm-3">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar-times-o card"></i>
+                                    </div>
+                                    <input type="text" class="form-control" id="card_use_time" name="card_use_time" placeholder="请输入驾驶证有效期">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>准驾车型</th>
+                            <td>
+                                <input type="text" class="form-control" id="drive_type" name="drive_type" placeholder="请输入准驾车型">
+                            </td>
+                            <th><span class="text-red">*</span>发证籍贯</th>
+                            <td>
+                                <input type="text" class="form-control" id="drive_card_location" name="drive_card_location" placeholder="请输入发证籍贯">
+                            </td>
+                            <th></th>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div> 
+        <div class="box-footer clearfix text-center"> 
+            <button type="submit" class="btn btn-info" id="submit"><i class="fa fa-save"></i>  提交</button>
+            <a href="/Home/Driver/driverList" class="btn btn-default"><i class="fa fa-arrow-left"></i> 返回</a>
+        </div>
+    </div>
+    <!-- /.box -->
+    <include file="Index:js" />
+    <!-- DataTables -->
+    <script src="/Public/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/Public/plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="/Public/plugins/daterangepicker/moment.js"></script>
+    <script src="/Public/plugins/daterangepicker/daterangepicker-dob.js"></script>
+    <script src="/Public/plugins/datepicker/bootstrap-datepicker.js"></script>
+    <script src="/Public/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js"></script>
+    <script src="/Public/plugins/jQuery/jquery.validate.min.js"></script>
+    <script src="/Public/plugins/jQuery/additional-methods.min.js"></script>
+    <script src="/Public/js/public/carGroupPopup.js"></script>
+    <script src="/Public/js/driver/addDriver.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+        $('#driver_id_card').blur(function()
+        {
+            var card = $(this).val();
+            var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+            if(reg.test(card))
+            {
+                //获取年龄 
+                var myDate = new Date(); 
+                var month = myDate.getMonth() + 1; 
+                var day = myDate.getDate();
+
+                var age = myDate.getFullYear() - card.substring(6, 10) - 1; 
+                if (card.substring(10, 12) < month || card.substring(10, 12) == month && card.substring(12, 14) <= day) 
+                { 
+                    age++; 
+                } 
+                $('#driver_age').val(age);
+            }
+        })
+        $('#work_time').datepicker({
+            format: "yyyy-mm-dd",
+            language:'zh-CN'
+        });
+        $('#card_use_time').daterangepicker();
+        $('.fa-calendar-times-o').click(function() {
+            $(this).parents('td').find('input').val('');
+        });
+    });
+
+    //获取时间对象
+    function addDay(dayNumber, date) 
+    {
+        date = date ? date : new Date();
+        var ms = dayNumber * (1000 * 60 * 60 * 24)
+        var newDate = new Date(date.getTime() + ms);
+        return newDate;
+    }
+    //获取时间格式
+    function FormatDate (strTime) 
+    {
+        var date = new Date(strTime);
+        return date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate();
+    }
+    </script>
+</body>
+
+</html>

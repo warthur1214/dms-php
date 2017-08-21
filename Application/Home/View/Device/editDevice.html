@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Public/plugins/datatables/dataTables.bootstrap.css">
+    <style type="text/css">
+    .alert_page_success {
+        color: #468847;
+        background-color: #dff0d8;
+        border-color: #d6e9c6
+    }
+    
+    .alert_page_error {
+        color: #b94a48;
+        background-color: #f2dede;
+        border-color: #eed3d7
+    }
+    </style>
+</head>
+
+<body>
+    <section class="content-header">
+        <h1>
+        修改企业硬件
+      </h1>
+    </section>
+    <div class="box box-cus box-cus-form">
+        <div class="alert alert-error" style="display:none;">
+            <span>信息不能为空，请输入</span>
+        </div>
+        <div class="box-body">
+            <form id="info_form">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="title" colspan="4"><i class="fa fa fa-info-circle"></i> 修改企业硬件信息</td>
+                        </tr>
+                        <tr>
+                            <th>硬件厂家</th>
+                            <td>
+                                <select class="form-control" id="vender_id" name="vender_id">
+                                    <option value="">请选择</option>
+                                    <volist name="vender" id="val">
+                                        <option value="<{$val['vender_id']}>" <if condition="$val['vender_id'] eq $info['vender_id']">selected</if> >
+                                            <{$val['vender_name']}>
+                                        </option>
+                                    </volist>
+                                </select>
+                            </td>
+                            <th>设备类型</th>
+                            <td>
+                                <input type="text" class="form-control" name="device_type_name" id="device_type_name" value="<{$info['device_type_name']}>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>设备型号</th>
+                            <td colspan="3">
+                                <div class="device_info">
+                                    <div class="icon-box"><a href="javascript:;" class="add btn btn-info btn-xs">[+]</a></div>
+                                    <input type="text" class="form-control" name="device_model_name[]" placeholder="设备型号">
+                                </div>
+                                <volist name="info['device_model_name']" id="val">
+                                    <div class="device_info">
+                                        <div class="icon-box"><a href="javascript:;" class="remove btn btn-info btn-xs">[-]</a></div>
+                                        <input type="text" class="form-control" name="device_model_name[]" value="<{$val['device_model_name']}>">
+                                    </div>
+                                </volist>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="hidden" name="device_type_id" value="<{$info['device_type_id']}>">
+            </form>
+        </div> 
+        <div class="box-footer clearfix text-center">
+            <button type="button" class="btn btn-info" id="submit"><i class="fa fa-save"></i> 提交</button>
+            <a href="/Home/Device/deviceList" class="btn btn-default" id="back"><i class="fa fa-arrow-left"></i>返回</a>
+        </div>
+    </div>
+    <!-- /.box -->
+    <include file="Index:js" />
+    <!-- DataTables -->
+    <script src="/Public/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/Public/plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="/Public/plugins/jQuery/jquery.validate.min.js"></script>
+    <script src="/Public/plugins/jQuery/additional-methods.min.js"></script>
+    <script src="/Public/js/device/editDevice.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('.add').click(function() {
+            var parent = $(this).parents('.device_info');
+            var html = parent.prop('outerHTML');
+            var html = html.replace('add', 'remove').replace('新增', '').replace('[+]', '[-]');
+            parent.after(html);
+        })
+        $('#info_form').on('click', '.remove', function() {
+            $(this).parents('.device_info').remove();
+        })
+    })
+    </script>
+</body>
+
+</html>

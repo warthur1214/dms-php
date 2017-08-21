@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <link rel="stylesheet" href="/Public/css/style/style.css">
+    <style type="text/css">
+    .alert_page_success {
+        color: #468847;
+        background-color: #dff0d8;
+        border-color: #d6e9c6
+    }
+    
+    .alert_page_error {
+        color: #b94a48;
+        background-color: #f2dede;
+        border-color: #eed3d7
+    }
+    </style>
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <section class="content-header">
+        <h1>
+        编辑费用
+      </h1>
+    </section>
+    <div class="box box-cus box-cus-form">
+        <!-- /.box-header -->
+        <div class="box-body">
+            <div class="alert alert-error" style="display:none;">
+                <span>信息不能为空，请输入</span>
+            </div>
+            <form id="info_form">
+                <input type="hidden" name="cost_id">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 费用基本信息</td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>费用类型</th>
+                            <td>
+                                <select class="form-control" name="cost_type" required>
+                                    <option selected="selected" value="保险费用">保险费用</option>
+                                    <option value="保养费用">保养费用</option>
+                                    <option value="维修费用">维修费用</option>
+                                    <option value="过路过桥费">过路过桥费</option>
+                                    <option value="加油费">加油费</option>
+                                </select>
+                            </td>
+                            <th><span class="text-red">*</span>车牌号</th>
+                            <td>
+                                <input type="text" class="form-control" id="car_id" name="car_no" required>
+                                <input type="hidden" name="car_id">
+                            </td>
+                            <th><span class="text-red">*</span>费用金额(元)</th>
+                            <td>
+                                <input type="text" class="form-control" name="cost" number="true" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <th><span class="text-red">*</span>司机姓名</th>
+                            <td>
+                                <input type="text" class="form-control" id="driver_id" name="driver_name" required>
+                                <input type="hidden" name="driver_id">
+                            </td> -->
+                            <th><span class="text-red">*</span>时间</th>
+                            <td>
+                                <i class="fa fa-calendar"></i> 
+                                <input type="text" class="form-control date" name="cost_time" data-type="datepicker" required>
+                            </td>
+                            <td colspan="2">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer clearfix text-center">
+            <button type="button" class="btn btn-info" id="submit"><i class="fa fa-save"></i> 提交</button>
+            <a href="javascript:window.history.go(-1);" class="btn btn-default"><i class="fa fa-arrow-left"></i> 返回</a>
+        </div>
+    </div>
+    <include file="Index:js" />
+    <include file="Index:datepicker" />
+    <include file="Index:validate" /> 
+    <script src="/Public/js/cost/editCost.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Public/plugins/datatables/dataTables.bootstrap.css">
+    <style type="text/css">
+    .alert_page_success {
+        color: #468847;
+        background-color: #dff0d8;
+        border-color: #d6e9c6
+    }
+    
+    .alert_page_error {
+        color: #b94a48;
+        background-color: #f2dede;
+        border-color: #eed3d7
+    }
+    </style>
+</head>
+
+<body>
+    <section class="content-header">
+        <span class="pull-right"> 
+          <a href="/Home/CarGroup" class="btn btn-sm btn-info"><i class="fa fa-plus"></i> 添加</a>
+    </span>
+        <h1>
+        车辆分组列表 
+      </h1>
+    </section>
+    <div class="box marginB0">
+        <div class="box-body">
+            <!-- alert start -->
+            <div class="alert alert_page_success" style="display:none;">
+            </div>
+            <div class="alert alert_page_error" style="display:none;">
+            </div>
+            <!-- alert end -->
+            <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>编号</th>
+                        <th>名称</th>
+                        <th>描述</th>
+                        <th>企业名称</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+    <include file="Index:js" />
+    <include file="Index:datatable" /> 
+    <script src="/Public/js/carGroup/groupList.js"></script>
+</body>
+
+</html>

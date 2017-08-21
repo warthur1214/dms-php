@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Public/plugins/datatables/dataTables.bootstrap.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="/Public/plugins/iCheck/all.css">
+    <style type="text/css">
+    .alert_page_success {
+        color: #468847;
+        background-color: #dff0d8;
+        border-color: #d6e9c6
+    }
+    
+    .alert_page_error {
+        color: #b94a48;
+        background-color: #f2dede;
+        border-color: #eed3d7
+    }
+    </style>
+</head>
+
+<body>
+    <section class="content-header">
+        <h1>
+        添加设备 
+      </h1>
+    </section>
+    <!-- general form elements -->
+    <div class="box box-cus box-cus-form"> 
+        <div class="alert alert-error" style="display:none;">
+            <span>信息不能为空，请输入</span>
+        </div>
+        <div class="box-body">
+            <form role="form" id="info_form">
+                <table class="table table-bordered">
+                    <colgroup>
+                        <col>
+                        <col width="20%">
+                        <col>
+                        <col width="20%">
+                        <col>
+                        <col width="20%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 添加设备信息</td>
+                        </tr>
+                        <tr>
+                            <th>设备号</th>
+                            <td>
+                                <input type="text" class="form-control" id="device_id" name="device_id" placeholder="设备号">
+                            </td>
+                            <th>设备公司</th>
+                            <td>
+                                <select class="form-control" id="vender_id" name="vender_id">
+                                    <option value="">请选择</option>
+                                    <volist name="vender" id="val">
+                                        <option value="<{$val['vender_id']}>">
+                                            <{$val['vender_name']}>
+                                        </option>
+                                    </volist>
+                                </select>
+                            </td>
+                            <th>设备类型</th>
+                            <td>
+                                <select class="form-control" id="device_type" name="device_type">
+                                </select>
+                            </td>
+                            <!-- <th>IMSI手机号</th>
+                            <td>
+                                <input type="text" class="form-control" id="card_num" name="card_num" placeholder="IMSI手机号">
+                            </td>
+                            <th>IMSI</th>
+                            <td>
+                                <input type="text" class="form-control" id="imsi" name="imsi" placeholder="IMSI">
+                            </td> -->
+                        </tr>
+                        <tr>
+                            <th>设备型号</th>
+                            <td>
+                                <select class="form-control" id="device_model" name="device_model">
+                                </select>
+                            </td>
+                            <th>设备归属</th>
+                            <td>
+                                <input type="hidden" name="organ_id">
+                                <input type="text" class="form-control" id="organ_id">   
+                            </td>
+                            <th></th>
+                            <td> 
+                            </td>
+                            <!-- <th>套餐年限</th>
+                            <td>
+                                <input type="text" class="form-control" id="card_term" name="card_term" placeholder="套餐年限">
+                            </td>
+                            <th>总流量</th>
+                            <td>
+                                <input type="text" class="form-control" id="total_flow" name="total_flow" placeholder="总流量">
+                            </td> -->
+                            
+                        </tr>
+                        <tr> 
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div> 
+        <div class="box-footer clearfix text-center"> 
+            <button type="submit" class="btn btn-info" id="submit"><i class="fa fa-save"></i>  提交</button>
+            <a href="/Home/Vehicle/vehicleList" class="btn btn-default"><i class="fa fa-arrow-left"></i> 返回</a>
+        </div>
+    </div>
+    <!-- /.box -->
+    <include file="Index:js" />
+    <!-- DataTables -->
+    <script src="/Public/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/Public/plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="/Public/plugins/jQuery/jquery.validate.min.js"></script> 
+    <script src="/Public/js/public/carGroupPopup.js"></script>
+    <script src="/Public/js/vehicle/addVehicle.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('input[type="radio"].flat-red').iCheck({
+            radioClass: 'iradio_flat-green'
+        });
+        $('#vender_id').change(function() {
+            $.ajax({
+                url: '/Home/Vehicle/getDevice/act/type/id/' + $(this).val(),
+                type: "post",
+                dataType: "json",
+                success: function(result) {
+                    var html = "";
+                    html += "<option value=''>请选择</option>";
+                    for (var i = 0; i < result.length; i++) {
+                        html += "<option value='" + result[i]['device_type_id'] + "'>" + result[i]['device_type_name'] + "</option>";
+                    };
+                    $('#device_type').html(html);
+                    $('#device_model').html("<option value=''>请选择</option>");
+                }
+            });
+        })
+        $('#device_type').change(function() {
+            $.ajax({
+                url: '/Home/Vehicle/getDevice/act/model/id/' + $(this).val(),
+                type: "post",
+                dataType: "json",
+                success: function(result) {
+                    var html = "";
+                    html += "<option value=''>请选择</option>";
+                    for (var i = 0; i < result.length; i++) {
+                        html += "<option value='" + result[i]['device_model_id'] + "'>" + result[i]['device_model_name'] + "</option>";
+                    };
+                    $('#device_model').html(html);
+                }
+            });
+        })
+    })
+    </script>
+</body>
+
+</html>

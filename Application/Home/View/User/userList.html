@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Public/plugins/datatables/dataTables.bootstrap.css">
+    <style type="text/css">
+    .alert_page_success {
+        color: #468847;
+        background-color: #dff0d8;
+        border-color: #d6e9c6
+    }
+    
+    .alert_page_error {
+        color: #b94a48;
+        background-color: #f2dede;
+        border-color: #eed3d7
+    }
+    #cooperateWrap{
+         position: relative;
+     }
+    #sonWrapper{
+        position: absolute;
+        top:34px;
+        height:auto;
+        width:100%;
+        background: #fff;
+        overflow-y: auto;
+        padding:0;
+        margin:0;
+        display: none;
+        z-index: 900;
+    }
+    #sonWrapper li:hover{
+
+        cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <section class="content-header">
+        <!-- <span class="pull-right">
+        <a href="/Home/User" class="btn btn-sm btn-primary"> <i class="fa fa-plus"></i> 添加用户</a>
+      </span> -->
+        <h1>
+        用户列表 
+      </h1>
+    </section>
+    <div class="box">
+        <form class="form-horizontal padding10" role="form" id="submit_form">
+            <div class="form-group">
+                <label for="user_phone" class="col-sm-1 control-label">手机号</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="user_phone" name="user_phone" placeholder="手机号">
+                </div>
+                <label for="car_no" class="col-sm-1 control-label">车牌号</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="car_no" name="car_no" placeholder="车牌号">
+                </div>
+                <label for="device_id" class="col-sm-1 control-label">设备号</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="device_id" name="device_id" placeholder="设备号">
+                </div>
+                <label class="col-sm-1 control-label">所属企业</label>
+                <div class="col-sm-2 form-group" id="cooperateWrap"> 
+                        <select type="text" class="form-control" id="chooseOrgan" name="organ_id" >
+                            <option id="selectOrgan" style="display:none;height: 0;" value="">全部</option>
+                        </select>
+                        <ul id="sonWrapper"></ul>
+
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="javascript:;" class="btn btn-sm btn-info selectInfo"><i class="fa fa-search"></i> 搜索</a>
+            </div>
+        </form>
+        <div class="box-header with-borderT">
+            <!-- <a href="javascript:;" id="fileOut" class="btn btn-sm btn-info marginL5"><i class="fa fa-download"></i> 导出数据</a> -->
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body table-box-cus">
+            <table id="list" class="table table-bordered">
+                 
+            </table>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer clearfix page">
+        </div>
+    </div>
+    <!-- /.box -->
+    <include file="Index:js" />
+    <script src="/Public/js/public/dataTableCusV2.js"></script> 
+    <script src="/Public/js/user/userList.js"></script>
+    <script>
+        // /Home/Public/organTree司机归属路径
+        //司机归属
+        $(function () {
+            bornTree($("#sonWrapper"),'/Home/Public/organTree');
+            $("#cooperateWrap").click(function(evt){
+                $("#sonWrapper").show();
+                evt.stopPropagation();
+            });
+            $(document).bind('click', function() {
+                $("#sonWrapper").hide();
+            })
+        })
+
+        // 生成树状函数
+        function bornTree($el,url){
+            init(url);
+            var _html = '';
+            function init(url) {
+                AjaxJson(url,function (res) {
+                    if (res){
+                        renderList(res);
+                        $el.append('<li class="fillText" organ_id="" name="'+'全部'+'">' + '全部' + '</li>');
+                        $el.append(_html);
+                    }
+                })
+            }
+            function renderList(res) {
+                for(var i=0,len=res.length;i<len;i++){
+                    var data = res[i];
+                    if(data.son){
+                        _html += '<li class="fillText" organ_id="'+data.organ_id+'" name="'+data.organ_name+'">'+data.organ_name+'<ul>';
+                        renderList(data.son);
+                        _html += '</ul></li>';
+                    }
+                    else {
+                        _html += '<li class="fillText" organ_id="'+data.organ_id+'" name="'+data.organ_name+'">' + data.organ_name + '</li>';
+                    }
+                }
+                $("#sonWrapper").on("click",".fillText",function (evt) {
+                    evt.stopPropagation();
+                    var valText = $(this).attr('name');
+                    var valId = $(this).attr('organ_id');
+                    $("#selectOrgan").text(valText).attr('selected','true').val(valId);
+                    $("#sonWrapper").hide();
+
+                })
+
+            }
+        }
+        $("#chooseOrgan").click(function (evt) {
+            $("#sonWrapper").toggle();
+            evt.stopPropagation();
+        })
+
+    </script>
+</body>
+
+</html>

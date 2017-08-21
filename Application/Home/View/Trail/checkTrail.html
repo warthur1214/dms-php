@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <link rel="stylesheet" href="/Public/css/style/style.css">
+    <link rel="stylesheet" href="/Public/css/public/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="/Public/css/public/ionicons.min.css">
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    <style type="text/css">
+    #container {
+        height: 100%
+    }
+    </style>
+</head>
+
+<body>
+    <script id="carInfo" type="text/html"> 
+        <div class="car-info-window">
+            <div class="badge bg-blue"><{$car['car_no']}></div>
+            <ul class="list-unstyled"> 
+                <li>车辆品牌：<{$car['car_brand']}>&nbsp;&nbsp;&nbsp;&nbsp;驾驶人：<{$car['driver_name']}></li>
+                <li>联系方式：<{$car['driver_phone']}></li>
+                <li>定位时间：{{createtime}}</li>
+                <li>定位地址：{{addr}}</li>
+                <li>车辆速度：{{speed}} km/h</li>
+                <li>车辆方向：{{pos}}</li> 
+            </ul>    
+        </div>
+    </script>
+    <div class="contorl-box">
+        <div class="btn-group" data-toggle="btn-toggle">
+            <span id="run" title="播放" class="play-drop-box btn btn-default btn-sm active">
+                <input type="hidden" name="speed" value="1">
+                <ul class="dropdown-menu">
+                    <li class="active" data-value="1"> <a href="#">1x</a></li>
+                    <li data-value="2"> <a href="#">2x</a></li>
+                    <li data-value="3"> <a href="#">3x</a></li>
+                  </ul>
+                <i class="fa fa-play text-green"></i>
+            </span>
+            <a id="pause" title="暂停" class="btn btn-default btn-sm"><i class="fa fa-pause text-green"></i></a>
+            <a id="stop" title="回放" class="btn btn-default btn-sm"><i class="fa fa-stop text-red"></i></a>
+        </div>
+        <div style="display:none;" id="gps">
+            <volist name="gps" id="val">  
+                <span class="geolatitude"><{$val['geolatitude']}></span>
+                <span class="geolongitude"><{$val['geolongitude']}></span>
+                <span class="speed"><{$val['gpsspeed']}></span>
+                <span class="createtime"><{$val['gpstime']}></span>
+                <span class="gpsorientation"><{$val['gpsorientation']}></span>
+            </volist>
+        </div>
+    </div>
+    <div id="container"></div>
+    <div id="result"></div>
+    <include file="Index:js" />
+    <script type="text/javascript" src="/Public/plugins/baidumap.js"></script>
+    <script type="text/javascript" src="/Public/js/trail/LuShu_min.js"></script>
+    <script type="text/javascript" src="/Public/plugins/arttemplate/template.js"></script>
+    <script type="text/javascript" src="/Public/js/trail/map.js"></script>
+</body>
+
+</html>

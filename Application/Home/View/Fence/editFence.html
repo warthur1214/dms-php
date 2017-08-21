@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Public/plugins/datatables/dataTables.bootstrap.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="/Public/plugins/daterangepicker/daterangepicker-bs3.css">
+    <link rel="stylesheet" href="/Public/plugins/datepicker/datepicker3.css">
+    <style type="text/css">
+    .alert_page_success {
+        color: #468847;
+        background-color: #dff0d8;
+        border-color: #d6e9c6
+    }
+    
+    .alert_page_error {
+        color: #b94a48;
+        background-color: #f2dede;
+        border-color: #eed3d7
+    }
+    
+    #allmap {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+    
+    #result {
+        width: 100%;
+        font-size: 12px;
+    }
+    #myTablePopup .dataTables_wrapper div.dataTables_info{ display: none; }
+    </style>
+</head>
+
+<body>
+    <section class="content-header">
+        <h1>
+        添加围栏 
+      </h1>
+    </section>
+    <!-- general form elements -->
+    <div class="box box-cus box-cus-form">
+        <div class="alert alert-error" style="display:none;">
+            <span>信息不能为空，请输入</span>
+        </div>
+        <div class="box-body">
+            <form role="form" id="info_form">
+                <input type="hidden" name="fence_id" id="fence_id">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 基本信息</td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>围栏名称</th>
+                            <td>
+                                <input type="text" class="form-control" id="fence_name" name="fence_name" placeholder="请输入围栏姓名" required>
+                            </td>
+                            <th><span class="text-red">*</span>开启日期</th>
+                            <td>
+                                <div class='input-group date'>
+                                    <span class="input-group-addon">
+                            <span class="fa fa-calendar-times-o"></span>
+                                    </span>
+                                    <input type="text" class="form-control" id="open_time" name="open_time" placeholder="请输入开启日期" required>
+                                </div>
+                            </td>
+                            <th><span class="text-red">*</span>结束日期</th>
+                            <td>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar-times-o work"></i>
+                                    </div>
+                                    <input type="text" class="form-control" id="end_time" name="end_time" placeholder="请输入结束日期" required>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>星期</th>
+                            <td colspan="5" id="checkWeek">
+                                <!--<input type="text" class="form-control" id="work_day" name="work_day" placeholder="请输入" required>-->
+                                <input type="checkbox" class="form-control checkedBox" name="" value="日">&nbsp;&nbsp;<span>日&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="checkbox" class="form-control checkedBox" name="" value="一">&nbsp;&nbsp;<span>一&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="checkbox" class="form-control checkedBox" name="" value="二">&nbsp;&nbsp;<span>二&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="checkbox" class="form-control checkedBox" name="" value="三">&nbsp;&nbsp;<span>三&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="checkbox" class="form-control checkedBox" name="" value="四">&nbsp;&nbsp;<span>四&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="checkbox" class="form-control checkedBox" name="" value="五">&nbsp;&nbsp;<span>五&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="checkbox" class="form-control checkedBox" name="" value="六">&nbsp;&nbsp;<span>六</span>
+                                <input type="hidden" id="hiddenData" class="form-control" name="work_day" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>开始时间</th>
+                            <td>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar-times-o work"></i>
+                                    </div>
+                                    <input type="text" class="form-control" id="work_stime" name="work_stime" placeholder="请输入开始时间" required>
+                                </div>
+                            </td>
+                            <th><span class="text-red">*</span>结束时间</th>
+                            <td>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar-times-o work"></i>
+                                    </div>
+                                    <input type="text" class="form-control" id="work_etime" name="work_etime" placeholder="请输入结束时间" required>
+                                </div>
+                            </td>
+                            <th><span class="text-red">*</span>报警频率</th>
+                            <td>
+                                <select class="form-control" name="work_rate" required>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="text-red">*</span>接警人电话</th>
+                            <td colspan="3">
+                                <textarea class="form-control"onkeyup="this.value=this.value.replace(/[^\-?\d;]/g,'')" name="sendee_phone" placeholder="号码之间以分号 ； 隔开，最多允许20个号码！" value="" required></textarea>
+                            </td>
+                            <th><span class="text-red">*</span>报警条件</th>
+                            <td>
+                                <select class="form-control" name="work_term" required>
+                                    <option value="0">驶入</option>
+                                    <option value="1">驶出</option>
+                                    <option value="2">驶入驶出</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 区域信息</td>
+                        </tr>
+                        <tr>
+                            <th>地址名称</th>
+                            <td>
+                                <input type="text" class="form-control" id="address" name="fence_area" value="上海市">
+                            </td>
+                            <th><span class="text-red">*</span>区域类型</th>
+                            <td>
+                                <input type="hidden" name="area_val" id="area_val">
+                                <select id="AreaStyle" name="area_type" class="form-control" required>
+                                    <option value="rectangle" selected="selected">矩形</option>
+                                    <option value="circle">圆形</option>
+                                    <option value="polygon">多边形</option>
+                                    <!-- <option value="boundary">行政区域</option> -->
+                                </select>
+                            </td>
+                            <td colspan="2">
+                                <input type="hidden" class="form-control" id="boundary" name="admin_area" placeholder="请输入" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <div id="allmap" style="overflow:hidden;zoom:1;position:relative;">
+                                    <div id="map" style="height:100%;-webkit-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" id="addCar" class="btn btn-danger">添加车辆</button>
+                            </td>
+                            <td colspan="5">
+                                <input type="hidden" name="carStr" id="carStr" value="">
+                                <div id="myTablePopup" class="hide">
+                                    <div class="box-body">
+                                        <table class="table table-bordered table-hover">
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div class="box-footer clearfix text-center">
+            <button type="submit" class="btn btn-info" id="submit"><i class="fa fa-save"></i> 提交</button>
+            <a href="/Home/Fence/fenceList" class="btn btn-default"><i class="fa fa-arrow-left"></i> 返回</a>
+        </div>
+    </div>
+    <!-- /.box -->
+    <include file="Index:js" />
+    <include file="Index:mapfence" />
+    <include file="Index:datatable" />
+    <include file="Index:datepicker" />
+    <include file="Index:validate" />
+    <script type="text/javascript" src="/Public/js/fence/initCarTree.js"></script>
+    <script type="text/javascript" src="/Public/js/fence/initCarTable.js"></script>
+    <script type="text/javascript" src="/Public/js/fence/editFence.js"></script>
+</body>
+
+</html>

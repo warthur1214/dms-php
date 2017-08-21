@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/Public/plugins/datatables/dataTables.bootstrap.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="/Public/plugins/iCheck/all.css">
+    <style type="text/css">
+    .alert_page_success {
+        color: #468847;
+        background-color: #dff0d8;
+        border-color: #d6e9c6
+    }
+    
+    .alert_page_error {
+        color: #b94a48;
+        background-color: #f2dede;
+        border-color: #eed3d7
+    }
+    </style>
+</head>
+
+<body>
+    <section class="content-header">
+        <h1>
+        查看设备 
+      </h1>
+    </section>
+    <!-- general form elements -->
+    <div class="box box-cus box-cus-form">  
+        <div class="box-body">
+            <form role="form" id="info_form">
+                <table class="table table-bordered" id="tableVue">
+                    <colgroup>
+                        <col>
+                        <col width="20%">
+                        <col>
+                        <col width="20%">
+                        <col>
+                        <col width="20%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 设备信息</td>
+                        </tr>
+                        <tr>
+                            <th>编号</th>
+                            <td>{{id}}</td>
+                            <th>设备号</th>
+                            <td>{{device_no}}</td>
+                            <th>设备状态</th>
+                            <td>{{active_status}}</td>
+                        </tr>
+                        <tr>
+                            <th>激活时间</th>
+                            <td> {{active_time}}</td>
+                            <th>绑定状态</th>
+                            <td> {{bind_status}} </td>
+                            <th>设备公司</th>
+                            <td> {{device_com}} </td>
+                        </tr>
+                        <tr>
+                            <th>设备类型</th>
+                            <td> {{ device_type }} </td>
+                            <th>设备型号</th>
+                            <td> {{ device_model }} </td>
+                            <th>入库日期</th>
+                            <td> {{ create_time }} </td>
+                        </tr>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> sim卡信息</td>
+                        </tr>
+                        <tr>
+                            <th>IMSI</th>
+                            <td>{{ imsi }}</td>
+                            <th>ICCID</th>
+                            <td>{{ sim_iccid }}</td>
+                            <th>MSISDN</th>
+                            <td>{{ msisdn }}</td>
+                        </tr>
+                        <tr>
+                            <th>套餐月份</th>
+                            <td>{{ package_month }}</td>
+                            <th>总流量</th>
+                            <td>{{ total_flow }}</td>
+                        </tr> 
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 归属信息</td>
+                        </tr>
+                        <tr>
+                            <th>归属企业</th>
+                            <td>{{ first_name }}</td>
+                            <th>归属公司</th>
+                            <td>{{ company_name }}</td>
+                            <th>归属机构</th>
+                            <td>{{ son_name }}</td>
+                        </tr>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 用户信息</td>
+                        </tr>
+                        <tr>
+                            <th>用户手机号</th>
+                            <td>{{ tel }}</td>
+                            <th>用户名</th>
+                            <td>{{ nickname }}</td>
+                            <th>注册时间</th>
+                            <td>{{ user_create_time }}</td>
+                        </tr>
+                        <tr>
+                            <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 车辆信息</td>
+                        </tr>
+                        <tr>
+                            <th>车辆品牌</th>
+                            <td>{{ car_band }}</td>
+                            <th>车型</th>
+                            <td>{{ car_serious }}</td>
+                            <th>车牌号</th>
+                            <td>{{ car_no }}</td> 
+                        </tr>
+                        <tr> 
+                            <th>车架号</th>
+                            <td>{{ v_code }}</td>
+                            <th>发动机号</th>
+                            <td>{{ e_code }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div> 
+        <div class="box-footer clearfix text-center">  
+            <a href="/Home/Vehicle/vehicleList" class="btn btn-default"><i class="fa fa-arrow-left"></i> 返回</a>
+        </div>
+    </div>
+    <!-- /.box -->
+    <include file="Index:js" />  
+    <script src="/Public/js/public/vue.js"></script> 
+    <script src="/Public/js/vehicle/editVehicle.js"></script> 
+</body>
+
+</html>

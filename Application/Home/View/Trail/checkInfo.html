@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Index:meta" />
+    <include file="Index:css" />
+    <link rel="stylesheet" href="/Public/css/style/style.css">
+    <link rel="stylesheet" href="/Public/css/public/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="/Public/css/public/ionicons.min.css">
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <section class="content-header">
+        <h1>
+        查看历史轨迹
+      </h1>
+    </section>
+    <div class="box box-cus"> 
+        <!-- /.box-header -->
+        <div class="box-body">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 车辆信息</td>
+                    </tr>
+                    <tr>
+                        <th>车牌号</th>
+                        <td><{$info['car_no']}></td>
+                        <th>设备编号</th>
+                        <td><{$info['device_id']}></td>
+                        <th>驾驶人</th>
+                        <td><{$info['driver_name']}></td>
+                    </tr>
+                    <tr>
+                        <th>联系方式</th>
+                        <td><{$info['driver_phone']}></td>
+                        <th>点火时间</th>
+                        <td><{$info['start_time']|date="Y-m-d H:i:s",###}></td>
+                        <th>熄火时间</th>
+                        <td><{$info['end_time']|date="Y-m-d H:i:s",###}></td>
+                    </tr> 
+                </tbody> 
+                <tbody>
+                    <tr>
+                    <td class="title" colspan="6"><i class="fa fa fa-info-circle"></i> 行驶参数</td>
+                    </tr>
+                    <tr>
+                        <th>本次行驶距离</th>
+                        <td><{$info['distance_travelled']}> km</td>
+                        <th>本次行驶耗油</th>
+                        <td><{$info['oil_wear']/1000}> L</td>
+                        <th>本次行驶时长</th>
+                        <td><{$info['duration']}></td>
+                    </tr>
+                    <tr>
+                        <th>最大车速</th>
+                        <td><{$info['max_speed']}> km/h</td>
+                    </tr> 
+                    <tr>
+                        <th>急加次数</th>
+                        <td><{$info['accel_count']}></td>
+                        <th>急减次数</th>
+                        <td><{$info['decel_count']}></td> 
+                        <th>急转弯次数</th>
+                        <td><{$info['turn_count']}></td> 
+                    </tr> 
+                    <tr>
+                        <th>驾驶评分</th>
+                        <td><{$info['risk_score']}></td>
+                        <th>行程形成时间</th>
+                        <td><{$info['create_time']}></td>
+                        <th>本次行程</th>
+                        <td><{$info['start_address']}> — <{$info['end_address']}></td>  
+                    </tr> 
+                </tbody> 
+            </table>
+        </div>   
+        <!-- /.box-body -->
+        <div class="box-footer clearfix text-center">  
+            <a href="javascript:window.history.go(-1);" class="btn btn-default"><i class="fa fa-arrow-left"></i> 返回</a>
+        </div>
+    </div>
+    <include file="Index:js" />
+</body>
+
+</html>
